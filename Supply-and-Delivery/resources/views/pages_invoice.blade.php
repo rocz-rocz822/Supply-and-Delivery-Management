@@ -73,18 +73,8 @@
               </a>
               <div class="btn-group">
                 <button type="button" class="btn btn-xs btn-default btn-gradient dropdown-toggle" data-toggle="dropdown">
-                  <span class="glyphicon glyphicon-cog"></span>
+                  <span class="fa fa-times"></span>
                 </button>
-                <ul class="dropdown-menu checkbox-persist pull-right text-left" role="menu">
-                  <li>
-                    <a>
-                      <i class="fa fa-user"></i> View Profile </a>
-                  </li>
-                  <li>
-                    <a>
-                      <i class="fa fa-envelope-o"></i> Message </a>
-                  </li>
-                </ul>
               </div>
             </div>
           </div>
@@ -100,10 +90,10 @@
                   </h5>
                 </div>
               </div>
-              <div class="col-md-4"> <img src="assets/img/logos/logo.png" class="img-responsive center-block mt10 mw200 hidden-xs" alt="AdminDesigns"> </div>
+              <div class="col-md-4"> <img src="assets/img/logos/logo.png" class="img-responsive center-block mt10 mw200 hidden-xs" alt="COMET.AL"> </div>
               <div class="col-md-4">
                 <div class="pull-right text-right">
-                  <h2 class="invoice-logo-text hidden lh10">AdminDesigns</h2>
+                  <h2 class="invoice-logo-text hidden lh10">COMET.AL</h2>
                   <h5> Sales Rep:
                     <b class="text-primary">Michael Ronny</b>
                   </h5>

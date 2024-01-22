@@ -69,7 +69,10 @@
               <a href="{{url('employee_delivered')}}">Delivered</a>
             </li>
             <li>
-              <a href="{{url('employee_notyet')}}">Not Yet Delivered</a>
+              <a href="{{url('employee_pendingdel')}}">Pending Deliveries</a>
+            </li>
+            <li class="">
+              <a href="{{url('employee_cancelled')}}">Cancelled</a>
             </li>
             <li>
               <a href="{{url('employee_returned')}}">Returned</a>

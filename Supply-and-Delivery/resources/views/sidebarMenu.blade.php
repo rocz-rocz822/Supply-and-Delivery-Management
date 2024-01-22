@@ -13,13 +13,17 @@
                   <span class="glyphicon glyphicon-ok-circle"></span> Delivered </a>
               </li>
               <li>
-                <a href="{{url('employee_notyet')}}">
-                  <span class="glyphicon glyphicon-remove-circle"></span> Not Yet Delivered </a>
+                <a href="{{url('employee_pendingdel')}}">
+                  <span class="glyphicon glyphicon-time"></span> Pending Deliveries </a>
+              </li>
+              <li>
+                <a href="{{url('employee_cancelled')}}">
+                  <span class="glyphicon glyphicon-remove-circle"></span> Cancelled </a>
               </li>
               <li>
                 <a href="{{url('employee_returned')}}">
                   <span class="glyphicon glyphicon-circle-arrow-left"></span> Returned </a>
-            </li>
+              </li>
             </ul>
 
             <li>

@@ -32,8 +32,12 @@ Route::get('/employee_delivered', function () {
     return view('employee_delivered');
 });
 
-Route::get('/employee_notyet', function () {
-    return view('employee_notyet');
+Route::get('/employee_pendingdel', function () {
+    return view('employee_pendingdel');
+});
+
+Route::get('/employee_cancelled', function () {
+    return view('employee_cancelled');
 });
 
 Route::get('/employee_returned', function () {

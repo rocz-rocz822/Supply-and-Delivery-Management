@@ -70,7 +70,10 @@
               <a href="{{url('employee_delivered')}}">Delivered</a>
             </li>
             <li class="">
-              <a href="{{url('employee_notyet')}}">Not Yet Delivered</a>
+              <a href="{{url('employee_pendingdel')}}">Pending Deliveries</a>
+            </li>
+            <li class="">
+              <a href="{{url('employee_cancelled')}}">Cancelled</a>
             </li>
             <li class="active">
               <a href="{{url('employee_returned')}}">Returned</a>
@@ -94,12 +97,10 @@
                   <thead>
                     <tr class="bg-light">
                       <th class="text-center">Return</th>
-                      <th class="">Delivery ID</th>
-                      <th class="">Stock Order ID</th>
-                      <th class="">Carrier Name</th>
-                      <th class="">Delivery Date and Time</th>
-                      <th class="">Exact Arrival</th>
-                      <th class="">Estimated Arrival</th>
+                      <th class="">Return ID</th>
+                      <th class="">Transaction ID</th>
+                      <th class="">Reason of Return</th>
+                      <th class="">Return Date</th>
                       <th class="text-center">Status</th>
                     </tr>
                   </thead>
@@ -108,15 +109,13 @@
                    <tr>
                      <td class="text-center">
                       <button type="button" class="btn btn-rounded btn-default btn-block btn-xs fs12"> 
-                         <a href="{{url('+sup')}}#"> Send Back
+                         <a href="{{url('+sup')}}#">Send Back
                       </button>
                       </td>
                       <td class="">01234567890</td>
                       <td class="">12345678901</td>
-                      <td class="">ABCD Inc.</td>
-                      <td class="">12/03/2014 12:51</td>
-                      <td class="">12/03/2014 12:51</td>
-                      <td class="">12/03/2014 12:51</td>
+                      <td class="">Lorem ipsum dolor sit amet, adipiscing eli</td>
+                      <td class="">12/03/2014</td>
                       <td class="text-center">
                         <div class="btn-group">
                           <button type="button" class="btn btn-xs br2 fs12 btn-alert"> Returned
@@ -133,10 +132,8 @@
                       </td>
                       <td class="">23456789012</td>
                       <td class="">34567890123</td>
-                      <td class="">ABCD Inc.</td>
-                      <td class="">12/03/2014 12:51</td>
-                      <td class="">12/03/2014 12:51</td>
-                      <td class="">12/03/2014 12:51</td>
+                      <td class="">Lorem ipsum dolor sit amet, adipiscing eli</td>
+                      <td class="">12/03/2014</td>
                       <td class="text-center">
                         <div class="btn-group">
                           <button type="button" class="btn btn-alert br2 btn-xs fs12"> Returned
@@ -153,10 +150,8 @@
                       </td>
                       <td class="">45678901234</td>
                       <td class="">56789012345</td>
-                      <td class="">ABCD Inc.</td>
-                      <td class="">12/03/2014 12:51</td>
-                      <td class="">12/03/2014 12:51</td>
-                      <td class="">12/03/2014 12:51</td>
+                      <td class="">Lorem ipsum dolor sit amet, adipiscing eli</td>
+                      <td class="">12/03/2014</td>
                       <td class="text-center">
                         <div class="btn-group">
                           <button type="button" class="btn btn-alert br2 btn-xs fs12"> Returned
@@ -173,10 +168,8 @@
                       </td>
                       <td class="">67890123456</td>
                       <td class="">78901234567</td>
-                      <td class="">ABCD Inc.</td>
-                      <td class="">12/03/2014 12:51</td>
-                      <td class="">12/03/2014 12:51</td>
-                      <td class="">12/03/2014 12:51</td>
+                      <td class="">Lorem ipsum dolor sit amet, adipiscing eli</td>
+                      <td class="">12/03/2014</td>
                       <td class="text-center">
                         <div class="btn-group text-right">
                           <button type="button" class="btn btn-alert br2 btn-xs fs12"> Returned
@@ -193,10 +186,8 @@
                       </td>
                       <td class="">89012345678</td>
                       <td class="">90123456789</td>
-                      <td class="">ABCD Inc.</td>
-                      <td class="">12/03/2014 12:51</td>
-                      <td class="">12/03/2014 12:51</td>
-                      <td class="">12/03/2014 12:51</td>
+                      <td class="">Lorem ipsum dolor sit amet, adipiscing eli</td>
+                      <td class="">12/03/2014</td>
                       <td class="text-center">
                         <div class="btn-group text-right">
                           <button type="button" class="btn btn-alert br2 btn-xs fs12"> Returned
@@ -213,10 +204,8 @@
                       </td>
                       <td class="">74108520963</td>
                       <td class="">85209630741</td>
-                      <td class="">ABCD Inc.</td>
-                      <td class="">12/03/2014 12:51</td>
-                      <td class="">12/03/2014 12:51</td>
-                      <td class="">12/03/2014 12:51</td>
+                      <td class="">Lorem ipsum dolor sit amet, adipiscing eli</td>
+                      <td class="">12/03/2014</td>
                       <td class="text-center">
                         <div class="btn-group text-right">
                           <button type="button" class="btn btn-alert br2 btn-xs fs12"> Returned
@@ -233,10 +222,8 @@
                       </td>
                       <td class="">78965412307</td>
                       <td class="">35715984260</td>
-                      <td class="">ABCD Inc.</td>
-                      <td class="">12/03/2014 12:51</td>
-                      <td class="">12/03/2014 12:51</td>
-                      <td class="">12/03/2014 12:51</td>
+                      <td class="">Lorem ipsum dolor sit amet, adipiscing eli</td>
+                      <td class="">12/03/2014</td>
                       <td class="text-center">
                         <div class="btn-group text-right">
                           <button type="button" class="btn btn-alert br2 btn-xs fs12"> Returned
@@ -253,10 +240,8 @@
                       </td>
                       <td class="">74123698502</td>
                       <td class="">96308520741</td>
-                      <td class="">ABCD Inc.</td>
-                      <td class="">12/03/2014 12:51</td>
-                      <td class="">12/03/2014 12:51</td>
-                      <td class="">12/03/2014 12:51</td>
+                      <td class="">Lorem ipsum dolor sit amet, adipiscing eli</td>
+                      <td class="">12/03/2014</td>
                       <td class="text-center">
                         <div class="btn-group text-right">
                           <button type="button" class="btn btn-alert br2 btn-xs fs12"> Returned
@@ -273,10 +258,8 @@
                       </td>
                       <td class="">98765432109</td>
                       <td class="">45632178905</td>
-                      <td class="">ABCD Inc.</td>
-                      <td class="">12/03/2014 12:51</td>
-                      <td class="">12/03/2014 12:51</td>
-                      <td class="">12/03/2014 12:51</td>
+                      <td class="">Lorem ipsum dolor sit amet, adipiscing eli</td>
+                      <td class="">12/03/2014</td>
                       <td class="text-center">
                         <div class="btn-group text-right">
                           <button type="button" class="btn btn-alert br2 btn-xs fs12"> Returned
@@ -293,10 +276,8 @@
                       </td>
                       <td class="">15963247803</td>
                       <td class="">84267951305</td>
-                      <td class="">ABCD Inc.</td>
-                      <td class="">12/03/2014 12:51</td>
-                      <td class="">12/03/2014 12:51</td>
-                      <td class="">12/03/2014 12:51</td>
+                      <td class="">Lorem ipsum dolor sit amet, adipiscing eli</td>
+                      <td class="">12/03/2014</td>
                       <td class="text-center">
                         <div class="btn-group text-right">
                           <button type="button" class="btn btn-alert br2 btn-xs fs12"> Returned
@@ -313,10 +294,8 @@
                       </td>
                       <td class="">31649785209</td>
                       <td class="">01346798520</td>
-                      <td class="">ABCD Inc.</td>
-                      <td class="">12/03/2014 12:51</td>
-                      <td class="">12/03/2014 12:51</td>
-                      <td class="">12/03/2014 12:51</td>
+                      <td class="">Lorem ipsum dolor sit amet, adipiscing eli</td>
+                      <td class="">12/03/2014</td>
                       <td class="text-center">
                         <div class="btn-group text-right">
                           <button type="button" class="btn btn-alert br2 btn-xs fs12"> Returned

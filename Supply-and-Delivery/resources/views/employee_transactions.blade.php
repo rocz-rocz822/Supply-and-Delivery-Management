@@ -73,14 +73,6 @@
             </li>
           </ul>
         </div>
-        <div class="topbar-right hidden-xs hidden-sm">
-          <a href="{{url('employee_orders')}}" class="btn btn-default btn-sm light fw600 ml10">
-            <span class="fa fa-plus pr5"></span> New Invoice</a>
-          <a href="{{url('employee_customers')}}" class="btn btn-default btn-sm light fw600 ml10">
-            <span class="fa fa-plus pr5"></span> Edit Invoice</a>
-          <a href="{{url('employee_customers')}}" class="btn btn-default btn-sm light fw600 ml10">
-            <span class="fa fa-user pr5"></span> Delete Invoice</a>
-        </div>
       </header>
       <!-- End: Topbar -->
 
@@ -98,11 +90,11 @@
                   <thead>
                     <tr class="bg-light">
                       <th class="text-center">View</th>
-                      <th class="">Transaction ID</th>
+                      <th class="text-center">Transaction ID</th>
                       <th class="">Stock Order ID</th>
                       <th class="">Delivery ID</th>
-                      <th class="">Notes</th>
-                      <th class="text-center">Order Status</th>
+                      <th class="">Carrier Name</th>
+                      <th class="">Order Status</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -114,38 +106,15 @@
                       <span class="fa fa-angle-right"></span></a>
                       </button>
                       </td>
-                      <td class="">#165498739</td>
+                      <td class="text-center">#165498739</td>
                       <td class="">#50362061</td>
-                      <td class="w175">
-                        <span>Louis Renold</span>
-                      </td>
-                      <td class="">Lorem ipsum dolor sit amet, adipiscing eli</td>
-                      <td class="text-right">
-                        <div class="btn-group text-right">
-                          <button type="button" class="btn btn-info br2 btn-xs fs12 dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> Pending
-                            <span class="caret ml5"></span>
+                      <td class="">#64729708798</td>
+                      <td class="">COMET.AL</td>
+                      <td class="">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-info br2 btn-xs fs12"> Pending
+                          <a href="{{url('employee_pendingdel')}}#"></a>
                           </button>
-                          <ul class="dropdown-menu" role="menu">
-                            <li>
-                              <a href="{{url('employee_orders')}}#">Edit</a>
-                            </li>
-                            <li>
-                              <a href="{{url('employee_orders')}}#">Delete</a>
-                            </li>
-                            <li>
-                              <a href="{{url('employee_orders')}}#">Archive</a>
-                            </li>
-                            <li class="divider"></li>
-                            <li>
-                              <a href="{{url('employee_orders')}}#">Complete</a>
-                            </li>
-                            <li class="active">
-                              <a href="{{url('employee_orders')}}#">Pending</a>
-                            </li>
-                            <li>
-                              <a href="{{url('employee_orders')}}#">Canceled</a>
-                            </li>
-                          </ul>
                         </div>
                       </td>
                     </tr>
@@ -157,38 +126,15 @@
                       <span class="fa fa-angle-right"></span></a>
                       </button>
                       </td>
-                      <td class="">#165498739</td>
+                      <td class="text-center">#165498739</td>
                       <td class="">#50362061</td>
-                      <td class="w175">
-                        <span>Louis Renold</span>
-                      </td>
-                      <td class="">Lorem ipsum dolor sit amet, adipiscing eli</td>
-                      <td class="text-right">
+                      <td class="">#64729708798</td>
+                      <td class="">COMET.AL</td>
+                      <td class="">
                         <div class="btn-group text-right">
-                          <button type="button" class="btn btn-info br2 btn-xs fs12 dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> Pending
-                            <span class="caret ml5"></span>
+                          <button type="button" class="btn btn-info br2 btn-xs fs12"> Pending
+                          <a href="{{url('employee_pendingdel')}}#"></a>
                           </button>
-                          <ul class="dropdown-menu" role="menu">
-                            <li>
-                              <a href="{{url('employee_orders')}}#">Edit</a>
-                            </li>
-                            <li>
-                              <a href="{{url('employee_orders')}}#">Delete</a>
-                            </li>
-                            <li>
-                              <a href="{{url('employee_orders')}}#">Archive</a>
-                            </li>
-                            <li class="divider"></li>
-                            <li>
-                              <a href="{{url('employee_orders')}}#">Complete</a>
-                            </li>
-                            <li class="active">
-                              <a href="{{url('employee_orders')}}#">Pending</a>
-                            </li>
-                            <li>
-                              <a href="{{url('employee_orders')}}#">Canceled</a>
-                            </li>
-                          </ul>
                         </div>
                       </td>
                     </tr>
@@ -200,38 +146,15 @@
                       <span class="fa fa-angle-right"></span></a>
                       </button>
                       </td>
-                      <td class="">#165498739</td>
+                      <td class="text-center">#165498739</td>
                       <td class="">#50362061</td>
-                      <td class="w175">
-                        <span>Sara Loft</span>
-                      </td>
-                      <td class="">Lorem ipsum dolor sit amet, adipiscing eli</td>
-                      <td class="text-right">
+                      <td class="">#64729708798</td>
+                      <td class="">COMET.AL</td>
+                      <td class="">
                         <div class="btn-group text-right">
-                          <button type="button" class="btn btn-info br2 btn-xs fs12 dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> Pending
-                            <span class="caret ml5"></span>
+                          <button type="button" class="btn btn-info br2 btn-xs fs12"> Pending
+                          <a href="{{url('employee_pendingdel')}}#"></a>
                           </button>
-                          <ul class="dropdown-menu" role="menu">
-                            <li>
-                              <a href="{{url('employee_orders')}}#">Edit</a>
-                            </li>
-                            <li>
-                              <a href="{{url('employee_orders')}}#">Delete</a>
-                            </li>
-                            <li>
-                              <a href="{{url('employee_orders')}}#">Archive</a>
-                            </li>
-                            <li class="divider"></li>
-                            <li>
-                              <a href="{{url('employee_orders')}}#">Complete</a>
-                            </li>
-                            <li class="active">
-                              <a href="{{url('employee_orders')}}#">Pending</a>
-                            </li>
-                            <li>
-                              <a href="{{url('employee_orders')}}#">Canceled</a>
-                            </li>
-                          </ul>
                         </div>
                       </td>
                     </tr>
@@ -243,38 +166,15 @@
                       <span class="fa fa-angle-right"></span></a>
                       </button>
                       </td>
-                      <td class="">#165498739</td>
+                      <td class="text-center">#165498739</td>
                       <td class="">#50362061</td>
-                      <td class="w175">
-                        <span>Frank Roles</span>
-                      </td>
-                      <td class="">Lorem ipsum dolor sit amet, adipiscing eli</td>
-                      <td class="text-right">
+                      <td class="">#64729708798</td>
+                      <td class="">COMET.AL</td>
+                      <td class="">
                         <div class="btn-group text-right">
-                          <button type="button" class="btn btn-success br2 btn-xs fs12 dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> Completed
-                            <span class="caret ml5"></span>
+                          <button type="button" class="btn btn-success br2 btn-xs fs12"> Delivered
+                          <a href="{{url('employee_delivered')}}#"></a>
                           </button>
-                          <ul class="dropdown-menu" role="menu">
-                            <li>
-                              <a href="{{url('employee_orders')}}#">Edit</a>
-                            </li>
-                            <li>
-                              <a href="{{url('employee_orders')}}#">Delete</a>
-                            </li>
-                            <li>
-                              <a href="{{url('employee_orders')}}#">Archive</a>
-                            </li>
-                            <li class="divider"></li>
-                            <li>
-                              <a href="{{url('employee_orders')}}#">Complete</a>
-                            </li>
-                            <li class="active">
-                              <a href="{{url('employee_orders')}}#">Pending</a>
-                            </li>
-                            <li>
-                              <a href="{{url('employee_orders')}}#">Canceled</a>
-                            </li>
-                          </ul>
                         </div>
                       </td>
                     </tr>
@@ -286,38 +186,15 @@
                       <span class="fa fa-angle-right"></span></a>
                       </button>
                       </td>
-                      <td class="">#165498739 </td>
+                      <td class="text-center">#165498739 </td>
                       <td class="">#50362061</td>
-                      <td class="w175">
-                        <span>Michael Runes</span>
-                      </td>
-                      <td class="">Lorem ipsum dolor sit amet, adipiscing eli</td>
-                      <td class="text-right">
+                      <td class="">Michael Runes</td>
+                      <td class="">COMET.AL</td>
+                      <td class="">
                         <div class="btn-group text-right">
-                          <button type="button" class="btn btn-success br2 btn-xs fs12 dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> Completed
-                            <span class="caret ml5"></span>
+                          <button type="button" class="btn btn-success br2 btn-xs fs12"> Delivered
+                          <a href="{{url('employee_delivered')}}#"></a>
                           </button>
-                          <ul class="dropdown-menu" role="menu">
-                            <li>
-                              <a href="{{url('employee_orders')}}#">Edit</a>
-                            </li>
-                            <li>
-                              <a href="{{url('employee_orders')}}#">Delete</a>
-                            </li>
-                            <li>
-                              <a href="{{url('employee_orders')}}#">Archive</a>
-                            </li>
-                            <li class="divider"></li>
-                            <li>
-                              <a href="{{url('employee_orders')}}#">Complete</a>
-                            </li>
-                            <li class="active">
-                              <a href="{{url('employee_orders')}}#">Pending</a>
-                            </li>
-                            <li>
-                              <a href="{{url('employee_orders')}}#">Canceled</a>
-                            </li>
-                          </ul>
                         </div>
                       </td>
                     </tr>
@@ -329,38 +206,15 @@
                       <span class="fa fa-angle-right"></span></a>
                       </button>
                       </td>
-                      <td class="">#165498739</td>
+                      <td class="text-center">#165498739</td>
                       <td class="">#50362061</td>
-                      <td class="w175">
-                        <span>Amanda Marshall</span>
-                      </td>
-                      <td class="">Lorem ipsum dolor sit amet, adipiscing eli</td>
-                      <td class="text-right">
+                      <td class="">#64729708798</td>
+                      <td class="">COMET.AL</td>
+                      <td class="">
                         <div class="btn-group text-right">
-                          <button type="button" class="btn btn-success br2 btn-xs fs12 dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> Completed
-                            <span class="caret ml5"></span>
+                          <button type="button" class="btn btn-success br2 btn-xs fs12"> Delivered
+                          <a href="{{url('employee_delivered')}}#"></a>
                           </button>
-                          <ul class="dropdown-menu" role="menu">
-                            <li>
-                              <a href="{{url('employee_orders')}}#">Edit</a>
-                            </li>
-                            <li>
-                              <a href="{{url('employee_orders')}}#">Delete</a>
-                            </li>
-                            <li>
-                              <a href="{{url('employee_orders')}}#">Archive</a>
-                            </li>
-                            <li class="divider"></li>
-                            <li>
-                              <a href="{{url('employee_orders')}}#">Complete</a>
-                            </li>
-                            <li class="active">
-                              <a href="{{url('employee_orders')}}#">Pending</a>
-                            </li>
-                            <li>
-                              <a href="{{url('employee_orders')}}#">Canceled</a>
-                            </li>
-                          </ul>
                         </div>
                       </td>
                     </tr>
@@ -372,38 +226,15 @@
                       <span class="fa fa-angle-right"></span></a>
                       </button>
                       </td>
-                      <td class="">#165498739</td>
+                      <td class="text-center">#165498739</td>
                       <td class="">#50362061</td>
-                      <td class="w175">
-                        <span>Terry Planes</span>
-                      </td>
-                      <td class="">Lorem ipsum dolor sit amet, adipiscing eli</td>
-                      <td class="text-right">
+                      <td class="">#64729708798</td>
+                      <td class="">COMET.AL</td>
+                      <td class="">
                         <div class="btn-group text-right">
-                          <button type="button" class="btn btn-success br2 btn-xs fs12 dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> Completed
-                            <span class="caret ml5"></span>
+                          <button type="button" class="btn btn-success br2 btn-xs fs12"> Delivered
+                          <a href="{{url('employee_delivered')}}#"></a>
                           </button>
-                          <ul class="dropdown-menu" role="menu">
-                            <li>
-                              <a href="{{url('employee_orders')}}#">Edit</a>
-                            </li>
-                            <li>
-                              <a href="{{url('employee_orders')}}#">Delete</a>
-                            </li>
-                            <li>
-                              <a href="{{url('employee_orders')}}#">Archive</a>
-                            </li>
-                            <li class="divider"></li>
-                            <li>
-                              <a href="{{url('employee_orders')}}#">Complete</a>
-                            </li>
-                            <li class="active">
-                              <a href="{{url('employee_orders')}}#">Pending</a>
-                            </li>
-                            <li>
-                              <a href="{{url('employee_orders')}}#">Canceled</a>
-                            </li>
-                          </ul>
                         </div>
                       </td>
                     </tr>
@@ -415,38 +246,15 @@
                       <span class="fa fa-angle-right"></span></a>
                       </button>
                       </td>
-                      <td class="">#165498739</td>
+                      <td class="text-center">#165498739</td>
                       <td class="">#50362061</td>
-                      <td class="w175">
-                        <span>Michael Runes</span>
-                      </td>
-                      <td class="">Lorem ipsum dolor sit amet, adipiscing eli</td>
-                      <td class="text-right">
+                      <td class="">#64729708798</td>
+                      <td class="">COMET.AL</td>
+                      <td class="">
                         <div class="btn-group text-right">
-                          <button type="button" class="btn btn-success br2 btn-xs fs12 dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> Completed
-                            <span class="caret ml5"></span>
+                          <button type="button" class="btn btn-success br2 btn-xs fs12"> Delivered
+                          <a href="{{url('employee_delivered')}}#"></a>
                           </button>
-                          <ul class="dropdown-menu" role="menu">
-                            <li>
-                              <a href="{{url('employee_orders')}}#">Edit</a>
-                            </li>
-                            <li>
-                              <a href="{{url('employee_orders')}}#">Delete</a>
-                            </li>
-                            <li>
-                              <a href="{{url('employee_orders')}}#">Archive</a>
-                            </li>
-                            <li class="divider"></li>
-                            <li>
-                              <a href="{{url('employee_orders')}}#">Complete</a>
-                            </li>
-                            <li class="active">
-                              <a href="{{url('employee_orders')}}#">Pending</a>
-                            </li>
-                            <li>
-                              <a href="{{url('employee_orders')}}#">Canceled</a>
-                            </li>
-                          </ul>
                         </div>
                       </td>
                     </tr>
@@ -458,38 +266,15 @@
                       <span class="fa fa-angle-right"></span></a>
                       </button>
                       </td>
-                      <td class="">#165498739</td>
+                      <td class="text-center">#165498739</td>
                       <td class="">#50362061</td>
-                      <td class="w175">
-                        <span>Amanda Marshall</span>
-                      </td>
-                      <td class="">Lorem ipsum dolor sit amet, adipiscing eli</td>
-                      <td class="text-right">
+                      <td class="">#64729708798</td>
+                      <td class="">COMET.AL</td>
+                      <td class="">
                         <div class="btn-group text-right">
-                          <button type="button" class="btn btn-warning br2 btn-xs fs12 dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> Archived
-                            <span class="caret ml5"></span>
+                          <button type="button" class="btn btn-alert br2 btn-xs fs12"> Returned
+                          <a href="{{url('employee_returned')}}#"></a>
                           </button>
-                          <ul class="dropdown-menu" role="menu">
-                            <li>
-                              <a href="{{url('employee_orders')}}#">Edit</a>
-                            </li>
-                            <li>
-                              <a href="{{url('employee_orders')}}#">Delete</a>
-                            </li>
-                            <li>
-                              <a href="{{url('employee_orders')}}#">Archive</a>
-                            </li>
-                            <li class="divider"></li>
-                            <li>
-                              <a href="{{url('employee_orders')}}#">Complete</a>
-                            </li>
-                            <li class="active">
-                              <a href="{{url('employee_orders')}}#">Pending</a>
-                            </li>
-                            <li>
-                              <a href="{{url('employee_orders')}}#">Canceled</a>
-                            </li>
-                          </ul>
                         </div>
                       </td>
                     </tr>
@@ -501,38 +286,15 @@
                       <span class="fa fa-angle-right"></span></a>
                       </button>
                       </td>
-                      <td class="">#165498739</td>
+                      <td class="text-center">#165498739</td>
                       <td class="">#50362061</td>
-                      <td class="w175">
-                        <span>Terry Planes</span>
-                      </td>
-                      <td class="">Lorem ipsum dolor sit amet, adipiscing eli</td>
-                      <td class="text-right">
+                      <td class="">#64729708798</td>
+                      <td class="">COMET.AL</td>
+                      <td class="">
                         <div class="btn-group text-right">
-                          <button type="button" class="btn btn-warning br2 btn-xs fs12 dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> Archived
-                            <span class="caret ml5"></span>
+                          <button type="button" class="btn btn-alert br2 btn-xs fs12"> Returned
+                          <a href="{{url('employee_returned')}}#"></a>
                           </button>
-                          <ul class="dropdown-menu" role="menu">
-                            <li>
-                              <a href="{{url('employee_orders')}}#">Edit</a>
-                            </li>
-                            <li>
-                              <a href="{{url('employee_orders')}}#">Delete</a>
-                            </li>
-                            <li>
-                              <a href="{{url('employee_orders')}}#">Archive</a>
-                            </li>
-                            <li class="divider"></li>
-                            <li>
-                              <a href="{{url('employee_orders')}}#">Complete</a>
-                            </li>
-                            <li class="active">
-                              <a href="{{url('employee_orders')}}#">Pending</a>
-                            </li>
-                            <li>
-                              <a href="{{url('employee_orders')}}#">Canceled</a>
-                            </li>
-                          </ul>
                         </div>
                       </td>
                     </tr>
@@ -544,38 +306,15 @@
                       <span class="fa fa-angle-right"></span></a>
                       </button>
                       </td>
-                      <td class="">#165498739</td>
+                      <td class="text-center">#165498739</td>
                       <td class="">#50362061</td>
-                      <td class="w175">
-                        <span>Amanda Marshall</span>
-                      </td>
-                      <td class="">Lorem ipsum dolor sit amet, adipiscing eli</td>
-                      <td class="text-right">
+                      <td class="">#64729708798</td>
+                      <td class="">COMET.AL</td>
+                      <td class="">
                         <div class="btn-group text-right">
-                          <button type="button" class="btn btn-danger br2 btn-xs fs12 dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> Canceled
-                            <span class="caret ml5"></span>
+                          <button type="button" class="btn btn-danger br2 btn-xs fs12"> Cancelled
+                          <a href="{{url('employee_cancelled')}}#"></a>
                           </button>
-                          <ul class="dropdown-menu" role="menu">
-                            <li>
-                              <a href="{{url('employee_orders')}}#">Edit</a>
-                            </li>
-                            <li>
-                              <a href="{{url('employee_orders')}}#">Delete</a>
-                            </li>
-                            <li>
-                              <a href="{{url('employee_orders')}}#">Archive</a>
-                            </li>
-                            <li class="divider"></li>
-                            <li>
-                              <a href="{{url('employee_orders')}}#">Complete</a>
-                            </li>
-                            <li class="active">
-                              <a href="{{url('employee_orders')}}#">Pending</a>
-                            </li>
-                            <li>
-                              <a href="{{url('employee_orders')}}#">Canceled</a>
-                            </li>
-                          </ul>
                         </div>
                       </td>
                     </tr>
@@ -587,38 +326,15 @@
                       <span class="fa fa-angle-right"></span></a>
                       </button>
                       </td>
-                      <td class="">#165498739</td>
+                      <td class="text-center">#165498739</td>
                       <td class="">#50362061</td>
-                      <td class="w175">
-                        <span>Terry Planes</span>
-                      </td>
-                      <td class="">Lorem ipsum dolor sit amet, adipiscing eli</td>
-                      <td class="text-right">
+                      <td class="">#64729708798</td>
+                      <td class="">COMET.AL</td>
+                      <td class="">
                         <div class="btn-group text-right">
-                          <button type="button" class="btn btn-danger br2 btn-xs fs12 dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> Canceled
-                            <span class="caret ml5"></span>
+                          <button type="button" class="btn btn-danger br2 btn-xs fs12"> Cancelled
+                          <a href="{{url('employee_cancelled')}}#"></a>
                           </button>
-                          <ul class="dropdown-menu" role="menu">
-                            <li>
-                              <a href="{{url('employee_orders')}}#">Edit</a>
-                            </li>
-                            <li>
-                              <a href="{{url('employee_orders')}}#">Delete</a>
-                            </li>
-                            <li>
-                              <a href="{{url('employee_orders')}}#">Archive</a>
-                            </li>
-                            <li class="divider"></li>
-                            <li>
-                              <a href="{{url('employee_orders')}}#">Complete</a>
-                            </li>
-                            <li class="active">
-                              <a href="{{url('employee_orders')}}#">Pending</a>
-                            </li>
-                            <li>
-                              <a href="{{url('employee_orders')}}#">Canceled</a>
-                            </li>
-                          </ul>
                         </div>
                       </td>
                     </tr>
@@ -630,38 +346,15 @@
                       <span class="fa fa-angle-right"></span></a>
                       </button>
                       </td>
-                      <td class="">#165498739</td>
+                      <td class="text-center">#165498739</td>
                       <td class="">#50362061</td>
-                      <td class="w175">
-                        <span>Terry Planes</span>
-                      </td>
-                      <td class="">Lorem ipsum dolor sit amet, adipiscing eli</td>
-                      <td class="text-right">
+                      <td class="">#64729708798</td>
+                      <td class="">COMET.AL</td>
+                      <td class="">
                         <div class="btn-group text-right">
-                          <button type="button" class="btn btn-danger br2 btn-xs fs12 dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> Canceled
-                            <span class="caret ml5"></span>
+                          <button type="button" class="btn btn-danger br2 btn-xs fs12"> Cancelled
+                          <a href="{{url('employee_cancelled')}}#"></a>
                           </button>
-                          <ul class="dropdown-menu" role="menu">
-                            <li>
-                              <a href="employee_orders#">Edit</a>
-                            </li>
-                            <li>
-                              <a href="employee_orders#">Delete</a>
-                            </li>
-                            <li>
-                              <a href="employee_orders#">Archive</a>
-                            </li>
-                            <li class="divider"></li>
-                            <li>
-                              <a href="employee_orders#">Complete</a>
-                            </li>
-                            <li class="active">
-                              <a href="employee_orders#">Pending</a>
-                            </li>
-                            <li>
-                              <a href="employee_orders#">Canceled</a>
-                            </li>
-                          </ul>
                         </div>
                       </td>
                     </tr>
