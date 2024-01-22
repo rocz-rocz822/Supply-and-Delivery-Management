@@ -56,23 +56,22 @@
 
       </div>
       <!-- End: Sidebar Left Content -->
-
     </aside>
 
     <!-- Start: Content-Wrapper -->
     <section id="content_wrapper">
-      
+
       <!-- Start: Topbar -->
       <header id="topbar" class="ph10">
         <div class="topbar-left">
           <ul class="nav nav-list nav-list-topbar pull-left">
-            <li>
+            <li class="active">
               <a href="{{url('employee_delivered')}}">Delivered</a>
             </li>
-            <li class="">
+            <li>
               <a href="{{url('employee_notyet')}}">Not Yet Delivered</a>
             </li>
-            <li class="active">
+            <li>
               <a href="{{url('employee_returned')}}">Returned</a>
             </li>
           </ul>
@@ -93,8 +92,7 @@
                 <table class="table admin-form theme-warning tc-checkbox-1 fs13">
                   <thead>
                     <tr class="bg-light">
-                      <th class="text-center">Return</th>
-                      <th class="">Delivery ID</th>
+                      <th class="text-center">Delivery ID</th>
                       <th class="">Stock Order ID</th>
                       <th class="">Carrier Name</th>
                       <th class="">Delivery Date and Time</th>
@@ -103,15 +101,10 @@
                       <th class="text-center">Status</th>
                     </tr>
                   </thead>
-                  <tbody>  
+                  <tbody>
+                    <tr>
   <!-- FIRST LINE -->
-                   <tr>
-                     <td class="text-center">
-                      <button type="button" class="btn btn-rounded btn-default btn-block btn-xs fs12"> 
-                         <a href="{{url('+sup')}}#"> Send Back
-                      </button>
-                      </td>
-                      <td class="">01234567890</td>
+                      <td class="text-center">01234567890</td>
                       <td class="">12345678901</td>
                       <td class="">ABCD Inc.</td>
                       <td class="">12/03/2014 12:51</td>
@@ -119,19 +112,14 @@
                       <td class="">12/03/2014 12:51</td>
                       <td class="text-center">
                         <div class="btn-group">
-                          <button type="button" class="btn btn-xs br2 fs12 btn-alert"> Returned
+                          <button type="button" class="btn btn-success br2 btn-xs fs12"> Delivered
                           </button>
                         </div>
                       </td>
                     </tr>
-  <!-- SECOND LINE -->
                     <tr>
-                      <td class="text-center">
-                       <button type="button" class="btn btn-rounded btn-default btn-block btn-xs fs12"> 
-                         <a href="{{url('+sup')}}#"> Send Back
-                        </button>
-                      </td>
-                      <td class="">23456789012</td>
+  <!-- SECOND LINE -->
+                      <td class="text-center">23456789012</td>
                       <td class="">34567890123</td>
                       <td class="">ABCD Inc.</td>
                       <td class="">12/03/2014 12:51</td>
@@ -139,19 +127,14 @@
                       <td class="">12/03/2014 12:51</td>
                       <td class="text-center">
                         <div class="btn-group">
-                          <button type="button" class="btn btn-alert br2 btn-xs fs12"> Returned
+                          <button type="button" class="btn btn-success br2 btn-xs fs12"> Delivered
                           </button>
                         </div>
                       </td>
                     </tr>
-  <!-- THIRD LINE -->
                     <tr>
-                      <td class="text-center">
-                       <button type="button" class="btn btn-rounded btn-default btn-block btn-xs fs12"> 
-                         <a href="{{url('+sup')}}#"> Send Back
-                       </button>
-                      </td>
-                      <td class="">45678901234</td>
+  <!-- THIRD LINE -->
+                      <td class="text-center">45678901234</td>
                       <td class="">56789012345</td>
                       <td class="">ABCD Inc.</td>
                       <td class="">12/03/2014 12:51</td>
@@ -159,19 +142,14 @@
                       <td class="">12/03/2014 12:51</td>
                       <td class="text-center">
                         <div class="btn-group">
-                          <button type="button" class="btn btn-alert br2 btn-xs fs12"> Returned
+                          <button type="button" class="btn btn-success br2 btn-xs fs12"> Delivered
                           </button>
                         </div>
                       </td>
                     </tr>
-
                     <tr>
-                      <td class="text-center">
-                       <button type="button" class="btn btn-rounded btn-default btn-block btn-xs fs12"> 
-                         <a href="{{url('+sup')}}#"> Send Back
-                       </button>
-                      </td>
-                      <td class="">67890123456</td>
+
+                      <td class="text-center">67890123456</td>
                       <td class="">78901234567</td>
                       <td class="">ABCD Inc.</td>
                       <td class="">12/03/2014 12:51</td>
@@ -179,19 +157,14 @@
                       <td class="">12/03/2014 12:51</td>
                       <td class="text-center">
                         <div class="btn-group text-right">
-                          <button type="button" class="btn btn-alert br2 btn-xs fs12"> Returned
+                          <button type="button" class="btn btn-success br2 btn-xs fs12"> Delivered
                           </button>
                         </div>
                       </td>
                     </tr>
-
                     <tr>
-                      <td class="text-center">
-                       <button type="button" class="btn btn-rounded btn-default btn-block btn-xs fs12"> 
-                         <a href="{{url('+sup')}}#"> Send Back
-                       </button>
-                      </td>
-                      <td class="">89012345678</td>
+
+                      <td class="text-center">89012345678</td>
                       <td class="">90123456789</td>
                       <td class="">ABCD Inc.</td>
                       <td class="">12/03/2014 12:51</td>
@@ -199,19 +172,14 @@
                       <td class="">12/03/2014 12:51</td>
                       <td class="text-center">
                         <div class="btn-group text-right">
-                          <button type="button" class="btn btn-alert br2 btn-xs fs12"> Returned
+                          <button type="button" class="btn btn-success br2 btn-xs fs12"> Delivered
                           </button>
                         </div>
                       </td>
                     </tr>
-                 
                     <tr>
-                      <td class="text-center">
-                       <button type="button" class="btn btn-rounded btn-default btn-block btn-xs fs12"> 
-                         <a href="{{url('+sup')}}#"> Send Back
-                       </button>
-                      </td>
-                      <td class="">74108520963</td>
+
+                      <td class="text-center">74108520963</td>
                       <td class="">85209630741</td>
                       <td class="">ABCD Inc.</td>
                       <td class="">12/03/2014 12:51</td>
@@ -219,19 +187,14 @@
                       <td class="">12/03/2014 12:51</td>
                       <td class="text-center">
                         <div class="btn-group text-right">
-                          <button type="button" class="btn btn-alert br2 btn-xs fs12"> Returned
+                          <button type="button" class="btn btn-success br2 btn-xs fs12"> Delivered
                           </button>
                         </div>
                       </td>
                     </tr>
-                   
                     <tr>
-                      <td class="text-center">
-                       <button type="button" class="btn btn-rounded btn-default btn-block btn-xs fs12"> 
-                         <a href="{{url('+sup')}}#"> Send Back
-                       </button>
-                      </td>
-                      <td class="">78965412307</td>
+
+                      <td class="text-center">78965412307</td>
                       <td class="">35715984260</td>
                       <td class="">ABCD Inc.</td>
                       <td class="">12/03/2014 12:51</td>
@@ -239,19 +202,14 @@
                       <td class="">12/03/2014 12:51</td>
                       <td class="text-center">
                         <div class="btn-group text-right">
-                          <button type="button" class="btn btn-alert br2 btn-xs fs12"> Returned
+                          <button type="button" class="btn btn-success br2 btn-xs fs12"> Delivered
                           </button>
                         </div>
                       </td>
                     </tr>
-                    
                     <tr>
-                      <td class="text-center">
-                       <button type="button" class="btn btn-rounded btn-default btn-block btn-xs fs12"> 
-                         <a href="{{url('+sup')}}#"> Send Back
-                       </button>
-                      </td>
-                      <td class="">74123698502</td>
+
+                      <td class="text-center">74123698502</td>
                       <td class="">96308520741</td>
                       <td class="">ABCD Inc.</td>
                       <td class="">12/03/2014 12:51</td>
@@ -259,19 +217,13 @@
                       <td class="">12/03/2014 12:51</td>
                       <td class="text-center">
                         <div class="btn-group text-right">
-                          <button type="button" class="btn btn-alert br2 btn-xs fs12"> Returned
+                          <button type="button" class="btn btn-success br2 btn-xs fs12"> Delivered
                           </button>
                         </div>
                       </td>
                     </tr>
-                 
-                    <tr>
-                      <td class="text-center">
-                       <button type="button" class="btn btn-rounded btn-default btn-block btn-xs fs12"> 
-                         <a href="{{url('+sup')}}#"> Send Back
-                       </button>
-                      </td>
-                      <td class="">98765432109</td>
+                    
+                      <td class="text-center">98765432109</td>
                       <td class="">45632178905</td>
                       <td class="">ABCD Inc.</td>
                       <td class="">12/03/2014 12:51</td>
@@ -279,19 +231,14 @@
                       <td class="">12/03/2014 12:51</td>
                       <td class="text-center">
                         <div class="btn-group text-right">
-                          <button type="button" class="btn btn-alert br2 btn-xs fs12"> Returned
+                          <button type="button" class="btn btn-success br2 btn-xs fs12"> Delivered
                           </button>
                         </div>
                       </td>
                     </tr>
-                  
                     <tr>
-                      <td class="text-center">
-                       <button type="button" class="btn btn-rounded btn-default btn-block btn-xs fs12"> 
-                         <a href="{{url('+sup')}}#"> Send Back
-                       </button>
-                      </td>
-                      <td class="">15963247803</td>
+
+                      <td class="text-center">15963247803</td>
                       <td class="">84267951305</td>
                       <td class="">ABCD Inc.</td>
                       <td class="">12/03/2014 12:51</td>
@@ -299,19 +246,14 @@
                       <td class="">12/03/2014 12:51</td>
                       <td class="text-center">
                         <div class="btn-group text-right">
-                          <button type="button" class="btn btn-alert br2 btn-xs fs12"> Returned
+                          <button type="button" class="btn btn-success br2 btn-xs fs12"> Delivered
                           </button>
                         </div>
                       </td>
                     </tr>
-                  
                     <tr>
-                      <td class="text-center">
-                       <button type="button" class="btn btn-rounded btn-default btn-block btn-xs fs12"> 
-                         <a href="{{url('+sup')}}#"> Send Back
-                       </button>
-                      </td>
-                      <td class="">31649785209</td>
+
+                      <td class="text-center">31649785209</td>
                       <td class="">01346798520</td>
                       <td class="">ABCD Inc.</td>
                       <td class="">12/03/2014 12:51</td>
@@ -319,7 +261,7 @@
                       <td class="">12/03/2014 12:51</td>
                       <td class="text-center">
                         <div class="btn-group text-right">
-                          <button type="button" class="btn btn-alert br2 btn-xs fs12"> Returned
+                          <button type="button" class="btn btn-success br2 btn-xs fs12"> Delivered
                           </button>
                         </div>
                       </td>
@@ -343,12 +285,8 @@
   <script src="vendor/jquery/jquery-1.11.1.min.js"></script>
   <script src="vendor/jquery/jquery_ui/jquery-ui.min.js"></script>
 
-  <!-- FileUpload JS -->
-  <script src="vendor/plugins/fileupload/fileupload.js"></script>
-  <script src="vendor/plugins/holder/holder.min.js"></script>
-
-  <!-- Tagmanager JS -->
-  <script src="vendor/plugins/tagsinput/tagsinput.min.js"></script>
+  <!-- Admin Forms JS -->
+  <script src="assets/admin-tools/admin-forms/js/jquery-ui-datepicker.min.js"></script>
 
   <!-- Theme Javascript -->
   <script src="assets/js/utility/utility.js"></script>
@@ -377,17 +315,26 @@
       $(e).change();
     });
 
-    // Init tagsinput plugin
-    $("input#tagsinput").tagsinput({
-      tagClass: function(item) {
-        return 'label label-default';
+    // Init datepicker widget
+    $('#filter-datepicker').datepicker({
+      numberOfMonths: 1,
+      showOn: 'both',
+      buttonText: '<i class="fa fa-calendar-o"></i>',
+      prevText: '<i class="fa fa-chevron-left"></i>',
+      nextText: '<i class="fa fa-chevron-right"></i>',
+      beforeShow: function(input, inst) {
+        var newclass = 'admin-form';
+        var themeClass = $(this).parents('.admin-form').attr('class');
+        var smartpikr = inst.dpDiv.parent();
+        if (!smartpikr.hasClass(themeClass)) {
+          inst.dpDiv.wrap('<div class="' + themeClass + '"></div>');
+        }
       }
     });
 
   });
   </script>
   <!-- END: PAGE SCRIPTS -->
-
 </body>
 
 </html>

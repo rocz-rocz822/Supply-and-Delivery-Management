@@ -29,10 +29,6 @@
 
 <!-- hrefs to be changed -->
             <li class="list-group-item">
-              <a href="{{url('')}}#" class="animated animated-short fadeInUp">
-                <span class="fa fa-gear"></span> Account Settings </a>
-            </li>
-            <li class="list-group-item">
               <a href="{{url('/')}}#" class="animated animated-short fadeInUp">
                 <span class="fa fa-power-off"></span> Logout </a>
             </li>

@@ -97,25 +97,24 @@
                 <table class="table admin-form theme-warning tc-checkbox-1 fs13">
                   <thead>
                     <tr class="bg-light">
-                      <th class="text-center">Select</th>
-                      <th class="">Order Date</th>
-                      <th class="">Order ID</th>
-                      <th class="">Supplier</th>
+                      <th class="text-center">View</th>
+                      <th class="">Transaction ID</th>
+                      <th class="">Stock Order ID</th>
+                      <th class="">Delivery ID</th>
                       <th class="">Notes</th>
                       <th class="text-center">Order Status</th>
                     </tr>
                   </thead>
                   <tbody>
+
                     <tr>
-                      <td class="">
-                        <label class="option block mn">
-                          <input type="checkbox" name="mobileos" value="FR">
-                          <span class="checkbox mn"></span>
-                        </label>
+                    <td class="text-center">
+                      <button type="button" class="btn btn-rounded btn-default btn-block btn-xs fs12"> 
+                         <a href="{{url('pages_invoice')}}#"> Open
+                      <span class="fa fa-angle-right"></span></a>
+                      </button>
                       </td>
-                      <td class="">
-                        01/11/2015
-                      </td>
+                      <td class="">#165498739</td>
                       <td class="">#50362061</td>
                       <td class="w175">
                         <span>Louis Renold</span>
@@ -150,16 +149,15 @@
                         </div>
                       </td>
                     </tr>
+
                     <tr>
-                      <td class="">
-                        <label class="option block mn">
-                          <input type="checkbox" name="mobileos" value="FR">
-                          <span class="checkbox mn"></span>
-                        </label>
+                    <td class="text-center">
+                      <button type="button" class="btn btn-rounded btn-default btn-block btn-xs fs12"> 
+                         <a href="{{url('pages_invoice')}}#"> Open
+                      <span class="fa fa-angle-right"></span></a>
+                      </button>
                       </td>
-                      <td class="">
-                        01/11/2015
-                      </td>
+                      <td class="">#165498739</td>
                       <td class="">#50362061</td>
                       <td class="w175">
                         <span>Louis Renold</span>
@@ -194,16 +192,15 @@
                         </div>
                       </td>
                     </tr>
+
                     <tr>
-                      <td class="">
-                        <label class="option block mn">
-                          <input type="checkbox" name="mobileos" value="FR">
-                          <span class="checkbox mn"></span>
-                        </label>
+                    <td class="text-center">
+                      <button type="button" class="btn btn-rounded btn-default btn-block btn-xs fs12"> 
+                         <a href="{{url('pages_invoice')}}#"> Open
+                      <span class="fa fa-angle-right"></span></a>
+                      </button>
                       </td>
-                      <td class="">
-                        01/11/2015
-                      </td>
+                      <td class="">#165498739</td>
                       <td class="">#50362061</td>
                       <td class="w175">
                         <span>Sara Loft</span>
@@ -238,16 +235,15 @@
                         </div>
                       </td>
                     </tr>
+
                     <tr>
-                      <td class="">
-                        <label class="option block mn">
-                          <input type="checkbox" name="mobileos" value="FR">
-                          <span class="checkbox mn"></span>
-                        </label>
+                      <td class="text-center">
+                      <button type="button" class="btn btn-rounded btn-default btn-block btn-xs fs12"> 
+                         <a href="{{url('pages_invoice')}}#"> Open
+                      <span class="fa fa-angle-right"></span></a>
+                      </button>
                       </td>
-                      <td class="">
-                        01/11/2015
-                      </td>
+                      <td class="">#165498739</td>
                       <td class="">#50362061</td>
                       <td class="w175">
                         <span>Frank Roles</span>
@@ -282,16 +278,15 @@
                         </div>
                       </td>
                     </tr>
+
                     <tr>
-                      <td class="">
-                        <label class="option block mn">
-                          <input type="checkbox" name="mobileos" value="FR">
-                          <span class="checkbox mn"></span>
-                        </label>
+                      <td class="text-center">
+                      <button type="button" class="btn btn-rounded btn-default btn-block btn-xs fs12"> 
+                         <a href="{{url('pages_invoice')}}#"> Open
+                      <span class="fa fa-angle-right"></span></a>
+                      </button>
                       </td>
-                      <td class="">
-                        01/11/2015
-                      </td>
+                      <td class="">#165498739 </td>
                       <td class="">#50362061</td>
                       <td class="w175">
                         <span>Michael Runes</span>
@@ -326,16 +321,15 @@
                         </div>
                       </td>
                     </tr>
+
                     <tr>
-                      <td class="">
-                        <label class="option block mn">
-                          <input type="checkbox" name="mobileos" value="FR">
-                          <span class="checkbox mn"></span>
-                        </label>
+                    <td class="text-center">
+                      <button type="button" class="btn btn-rounded btn-default btn-block btn-xs fs12"> 
+                         <a href="{{url('pages_invoice')}}#"> Open
+                      <span class="fa fa-angle-right"></span></a>
+                      </button>
                       </td>
-                      <td class="">
-                        01/11/2015
-                      </td>
+                      <td class="">#165498739</td>
                       <td class="">#50362061</td>
                       <td class="w175">
                         <span>Amanda Marshall</span>
@@ -370,16 +364,15 @@
                         </div>
                       </td>
                     </tr>
+
                     <tr>
-                      <td class="">
-                        <label class="option block mn">
-                          <input type="checkbox" name="mobileos" value="FR">
-                          <span class="checkbox mn"></span>
-                        </label>
+                      <td class="text-center">
+                      <button type="button" class="btn btn-rounded btn-default btn-block btn-xs fs12"> 
+                         <a href="{{url('pages_invoice')}}#"> Open
+                      <span class="fa fa-angle-right"></span></a>
+                      </button>
                       </td>
-                      <td class="">
-                        01/11/2015
-                      </td>
+                      <td class="">#165498739</td>
                       <td class="">#50362061</td>
                       <td class="w175">
                         <span>Terry Planes</span>
@@ -414,16 +407,15 @@
                         </div>
                       </td>
                     </tr>
+
                     <tr>
-                      <td class="">
-                        <label class="option block mn">
-                          <input type="checkbox" name="mobileos" value="FR">
-                          <span class="checkbox mn"></span>
-                        </label>
+                      <td class="text-center">
+                      <button type="button" class="btn btn-rounded btn-default btn-block btn-xs fs12"> 
+                         <a href="{{url('pages_invoice')}}#"> Open
+                      <span class="fa fa-angle-right"></span></a>
+                      </button>
                       </td>
-                      <td class="">
-                        01/11/2015
-                      </td>
+                      <td class="">#165498739</td>
                       <td class="">#50362061</td>
                       <td class="w175">
                         <span>Michael Runes</span>
@@ -458,16 +450,15 @@
                         </div>
                       </td>
                     </tr>
+
                     <tr>
-                      <td class="">
-                        <label class="option block mn">
-                          <input type="checkbox" name="mobileos" value="FR">
-                          <span class="checkbox mn"></span>
-                        </label>
+                      <td class="text-center">
+                      <button type="button" class="btn btn-rounded btn-default btn-block btn-xs fs12"> 
+                         <a href="{{url('pages_invoice')}}#"> Open
+                      <span class="fa fa-angle-right"></span></a>
+                      </button>
                       </td>
-                      <td class="">
-                        01/11/2015
-                      </td>
+                      <td class="">#165498739</td>
                       <td class="">#50362061</td>
                       <td class="w175">
                         <span>Amanda Marshall</span>
@@ -502,16 +493,15 @@
                         </div>
                       </td>
                     </tr>
+
                     <tr>
-                      <td class="">
-                        <label class="option block mn">
-                          <input type="checkbox" name="mobileos" value="FR">
-                          <span class="checkbox mn"></span>
-                        </label>
+                      <td class="text-center">
+                      <button type="button" class="btn btn-rounded btn-default btn-block btn-xs fs12"> 
+                         <a href="{{url('pages_invoice')}}#"> Open
+                      <span class="fa fa-angle-right"></span></a>
+                      </button>
                       </td>
-                      <td class="">
-                        01/11/2015
-                      </td>
+                      <td class="">#165498739</td>
                       <td class="">#50362061</td>
                       <td class="w175">
                         <span>Terry Planes</span>
@@ -546,16 +536,15 @@
                         </div>
                       </td>
                     </tr>
+
                     <tr>
-                      <td class="">
-                        <label class="option block mn">
-                          <input type="checkbox" name="mobileos" value="FR">
-                          <span class="checkbox mn"></span>
-                        </label>
+                      <td class="text-center">
+                      <button type="button" class="btn btn-rounded btn-default btn-block btn-xs fs12"> 
+                         <a href="{{url('pages_invoice')}}#"> Open
+                      <span class="fa fa-angle-right"></span></a>
+                      </button>
                       </td>
-                      <td class="">
-                        01/11/2015
-                      </td>
+                      <td class="">#165498739</td>
                       <td class="">#50362061</td>
                       <td class="w175">
                         <span>Amanda Marshall</span>
@@ -590,16 +579,15 @@
                         </div>
                       </td>
                     </tr>
+
                     <tr>
-                      <td class="">
-                        <label class="option block mn">
-                          <input type="checkbox" name="mobileos" value="FR">
-                          <span class="checkbox mn"></span>
-                        </label>
+                      <td class="text-center">
+                      <button type="button" class="btn btn-rounded btn-default btn-block btn-xs fs12"> 
+                         <a href="{{url('pages_invoice')}}#"> Open
+                      <span class="fa fa-angle-right"></span></a>
+                      </button>
                       </td>
-                      <td class="">
-                        01/11/2015
-                      </td>
+                      <td class="">#165498739</td>
                       <td class="">#50362061</td>
                       <td class="w175">
                         <span>Terry Planes</span>
@@ -634,16 +622,15 @@
                         </div>
                       </td>
                     </tr>
+
                     <tr>
-                      <td class="">
-                        <label class="option block mn">
-                          <input type="checkbox" name="mobileos" value="FR">
-                          <span class="checkbox mn"></span>
-                        </label>
+                      <td class="text-center">
+                      <button type="button" class="btn btn-rounded btn-default btn-block btn-xs fs12"> 
+                         <a href="{{url('pages_invoice')}}#"> Open
+                      <span class="fa fa-angle-right"></span></a>
+                      </button>
                       </td>
-                      <td class="">
-                        01/11/2015
-                      </td>
+                      <td class="">#165498739</td>
                       <td class="">#50362061</td>
                       <td class="w175">
                         <span>Terry Planes</span>
