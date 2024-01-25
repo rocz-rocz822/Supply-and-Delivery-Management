@@ -11,13 +11,13 @@
     <!-- Full Screen -->
       <ul class="nav navbar-nav navbar-left">
         <li class="hidden-xs">
-          <a class="request-fullscreen toggle-active" href="{{url('/')}}#">
+          <a class="request-fullscreen toggle-active">
             <span class="ad ad-screen-full fs18"></span>
           </a>
         </li>
       </ul>
 
-     <!-- Admin Info -->
+    <!-- Notifications -->
      <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="{{url('+sup')}}#">
@@ -31,6 +31,7 @@
           </ul>
         </li>
 
+     <!-- Admin Info -->
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
           <a href="{{url('employee_dashboard')}}#" class="dropdown-toggle fw600 p15" data-toggle="dropdown"> 
