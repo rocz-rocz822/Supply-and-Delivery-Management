@@ -32,7 +32,6 @@
         </li>
 
      <!-- Admin Info -->
-      <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
           <a href="{{url('employee_dashboard')}}#" class="dropdown-toggle fw600 p15" data-toggle="dropdown"> 
             <img src="assets/img/avatars/Sto. Domingo.jpg" alt="avatar" class="mw30 br64 mr15"> <b class="surnamebold">Admin</b>
