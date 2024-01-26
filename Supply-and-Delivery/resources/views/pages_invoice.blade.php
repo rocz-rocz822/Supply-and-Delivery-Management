@@ -100,6 +100,7 @@
                 </div>
               </div>
             </div>
+  <!-- BILLING INFO -->
             <div class="row" id="invoice-info">
               <div class="col-md-4">
                 <div class="panel panel-alt">
@@ -107,7 +108,6 @@
                     <span class="panel-title">
                       <i class="fa fa-user"></i> Bill To: </span>
                     <div class="panel-btns pull-right ml10">
-                      <span class="panel-title-sm"> Edit</span>
                     </div>
                   </div>
                   <div class="panel-body">
@@ -121,13 +121,13 @@
                   </div>
                 </div>
               </div>
+
               <div class="col-md-4">
                 <div class="panel panel-alt">
                   <div class="panel-heading">
                     <span class="panel-title">
                       <i class="fa fa-location-arrow"></i> Ship To:</span>
                     <div class="panel-btns pull-right ml10">
-                      <span class="panel-title-sm"> Edit</span>
                     </div>
                   </div>
                   <div class="panel-body">
@@ -141,6 +141,7 @@
                   </div>
                 </div>
               </div>
+
               <div class="col-md-4">
                 <div class="panel panel-alt">
                   <div class="panel-heading">
@@ -163,69 +164,59 @@
                 </div>
               </div>
             </div>
+  <!-- TABLE HEADER -->
             <div class="row" id="invoice-table">
               <div class="col-md-12">
                 <table class="table table-striped">
                   <thead>
                     <tr>
-                      <th>#</th>
-                      <th>Item</th>
-                      <th>Description</th>
-                      <th style="width: 135px;">#</th>
-                      <th>Rate</th>
-                      <th class="text-right pr10">Price</th>
+                      <th>ID</th>
+                      <th>Category</th>
+                      <th>Product Name</th>
+                      <th style="width: 135px;">Stock Quantity</th>
                     </tr>
                   </thead>
                   <tbody>
+  <!-- FIRST ROW -->
                     <tr>
                       <td>
                         <b>3</b>
                       </td>
-                      <td>Net Code Revamp</td>
-                      <td>Worked on Design and Structure (per hour)</td>
-                      <td>16</td>
-                      <td>$35.00</td>
-                      <td class="text-right pr10">$560.00</td>
+                      <td>Bracelet</td>
+                      <td>Caelum Armilla</td>
+                      <td class="text-center pr10">16</td>
                     </tr>
                     <tr>
                       <td>
                         <b>1</b>
                       </td>
-                      <td>Developer Newsletter </td>
-                      <td>Year Subscription X2</td>
-                      <td>2</td>
-                      <td>$12.99</td>
-                      <td class="text-right pr10">$25.98</td>
+                      <td>Necklace</td>
+                      <td>Caelum Monile</td>
+                      <td class="text-center pr10">2</td>
                     </tr>
                     <tr>
                       <td>
                         <b>3</b>
                       </td>
-                      <td>Admin Dashboard</td>
-                      <td>Design and implemention(per hour)</td>
-                      <td>16</td>
-                      <td>$35.00</td>
-                      <td class="text-right pr10">$560.00</td>
+                      <td>Package Set</td>
+                      <td>Incandescent Sun Package Set</td>
+                      <td class="text-center pr10">16</td>
                     </tr>
                     <tr>
                       <td>
                         <b>3</b>
                       </td>
-                      <td>Web Development</td>
-                      <td>Worked on Design and Structure (per hour)</td>
-                      <td>23</td>
-                      <td>$30.00</td>
-                      <td class="text-right pr10">$690.00</td>
+                      <td>Rings</td>
+                      <td>Noctis Annulus</td>
+                      <td class="text-center pr10">23</td>
                     </tr>
                     <tr>
                       <td>
                         <b>1</b>
                       </td>
-                      <td>Developer Newsletter </td>
-                      <td>Year Subscription X2</td>
-                      <td>2</td>
-                      <td>$12.99</td>
-                      <td class="text-right pr10">$25.98</td>
+                      <td>Necklace</td>
+                      <td>Sol Monile</td>
+                      <td class="text-center pr10">2</td>
                     </tr>
                   </tbody>
                 </table>
@@ -239,32 +230,14 @@
                     <thead>
                       <tr>
                         <th>
-                          <b>Sub Total:</b>
+                          <b>Total Quantity:</b>
                         </th>
-                        <th>$1375.98</th>
+                        <th class="text-left">59</th>
                       </tr>
                     </thead>
-                    <tbody>
-                      <tr>
-                        <td>
-                          <b>Payments</b>
-                        </td>
-                        <td>(-)0.00</td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <b>Total</b>
-                        </td>
-                        <td>$230.00</td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <b>Balance Due:</b>
-                        </td>
-                        <td>$1375.98</td>
-                      </tr>
-                    </tbody>
                   </table>
+                <br></br>
+                <br></br>
                 </div>
                 <div class="clearfix"></div>
                 <div class="invoice-buttons">

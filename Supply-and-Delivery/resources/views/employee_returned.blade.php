@@ -108,13 +108,12 @@
   <!-- FIRST LINE -->
                    <tr>
                      <td class="text-center">
-                      <button type="button" class="btn btn-rounded btn-default btn-block btn-xs fs12"> 
-                         <a href="{{url('+sup')}}#">Send Back
-                      </button>
+                       <button type="button" class="btn btn-rounded btn-default btn-block btn-xs fs12" onclick="sendBack()">Send Back
+                       </button>
                       </td>
                       <td class="">01234567890</td>
                       <td class="">12345678901</td>
-                      <td class="">Lorem ipsum dolor sit amet, adipiscing eli</td>
+                      <td class="">Defective</td>
                       <td class="">12/03/2014</td>
                       <td class="text-center">
                         <div class="btn-group">
@@ -126,13 +125,12 @@
   <!-- SECOND LINE -->
                     <tr>
                       <td class="text-center">
-                       <button type="button" class="btn btn-rounded btn-default btn-block btn-xs fs12"> 
-                         <a href="{{url('+sup')}}#"> Send Back
-                        </button>
+                       <button type="button" class="btn btn-rounded btn-default btn-block btn-xs fs12" onclick="sendBack()">Send Back
+                       </button>
                       </td>
                       <td class="">23456789012</td>
                       <td class="">34567890123</td>
-                      <td class="">Lorem ipsum dolor sit amet, adipiscing eli</td>
+                      <td class="">Defective</td>
                       <td class="">12/03/2014</td>
                       <td class="text-center">
                         <div class="btn-group">
@@ -144,13 +142,12 @@
   <!-- THIRD LINE -->
                     <tr>
                       <td class="text-center">
-                       <button type="button" class="btn btn-rounded btn-default btn-block btn-xs fs12"> 
-                         <a href="{{url('+sup')}}#"> Send Back
+                       <button type="button" class="btn btn-rounded btn-default btn-block btn-xs fs12" onclick="sendBack()">Send Back
                        </button>
                       </td>
                       <td class="">45678901234</td>
                       <td class="">56789012345</td>
-                      <td class="">Lorem ipsum dolor sit amet, adipiscing eli</td>
+                      <td class="">Defective</td>
                       <td class="">12/03/2014</td>
                       <td class="text-center">
                         <div class="btn-group">
@@ -162,13 +159,12 @@
 
                     <tr>
                       <td class="text-center">
-                       <button type="button" class="btn btn-rounded btn-default btn-block btn-xs fs12"> 
-                         <a href="{{url('+sup')}}#"> Send Back
+                       <button type="button" class="btn btn-rounded btn-default btn-block btn-xs fs12" onclick="sendBack()">Send Back
                        </button>
                       </td>
                       <td class="">67890123456</td>
                       <td class="">78901234567</td>
-                      <td class="">Lorem ipsum dolor sit amet, adipiscing eli</td>
+                      <td class="">Defective</td>
                       <td class="">12/03/2014</td>
                       <td class="text-center">
                         <div class="btn-group text-right">
@@ -180,13 +176,12 @@
 
                     <tr>
                       <td class="text-center">
-                       <button type="button" class="btn btn-rounded btn-default btn-block btn-xs fs12"> 
-                         <a href="{{url('+sup')}}#"> Send Back
+                       <button type="button" class="btn btn-rounded btn-default btn-block btn-xs fs12" onclick="sendBack()">Send Back
                        </button>
                       </td>
                       <td class="">89012345678</td>
                       <td class="">90123456789</td>
-                      <td class="">Lorem ipsum dolor sit amet, adipiscing eli</td>
+                      <td class="">Defective</td>
                       <td class="">12/03/2014</td>
                       <td class="text-center">
                         <div class="btn-group text-right">
@@ -198,13 +193,12 @@
                  
                     <tr>
                       <td class="text-center">
-                       <button type="button" class="btn btn-rounded btn-default btn-block btn-xs fs12"> 
-                         <a href="{{url('+sup')}}#"> Send Back
+                       <button type="button" class="btn btn-rounded btn-default btn-block btn-xs fs12" onclick="sendBack()">Send Back
                        </button>
                       </td>
                       <td class="">74108520963</td>
                       <td class="">85209630741</td>
-                      <td class="">Lorem ipsum dolor sit amet, adipiscing eli</td>
+                      <td class="">Defective</td>
                       <td class="">12/03/2014</td>
                       <td class="text-center">
                         <div class="btn-group text-right">
@@ -216,13 +210,12 @@
                    
                     <tr>
                       <td class="text-center">
-                       <button type="button" class="btn btn-rounded btn-default btn-block btn-xs fs12"> 
-                         <a href="{{url('+sup')}}#"> Send Back
+                       <button type="button" class="btn btn-rounded btn-default btn-block btn-xs fs12" onclick="sendBack()">Send Back
                        </button>
                       </td>
                       <td class="">78965412307</td>
                       <td class="">35715984260</td>
-                      <td class="">Lorem ipsum dolor sit amet, adipiscing eli</td>
+                      <td class="">Defective</td>
                       <td class="">12/03/2014</td>
                       <td class="text-center">
                         <div class="btn-group text-right">
@@ -234,13 +227,12 @@
                     
                     <tr>
                       <td class="text-center">
-                       <button type="button" class="btn btn-rounded btn-default btn-block btn-xs fs12"> 
-                         <a href="{{url('+sup')}}#"> Send Back
+                       <button type="button" class="btn btn-rounded btn-default btn-block btn-xs fs12" onclick="sendBack()">Send Back
                        </button>
                       </td>
                       <td class="">74123698502</td>
                       <td class="">96308520741</td>
-                      <td class="">Lorem ipsum dolor sit amet, adipiscing eli</td>
+                      <td class="">Defective</td>
                       <td class="">12/03/2014</td>
                       <td class="text-center">
                         <div class="btn-group text-right">
@@ -252,13 +244,12 @@
                  
                     <tr>
                       <td class="text-center">
-                       <button type="button" class="btn btn-rounded btn-default btn-block btn-xs fs12"> 
-                         <a href="{{url('+sup')}}#"> Send Back
+                       <button type="button" class="btn btn-rounded btn-default btn-block btn-xs fs12" onclick="sendBack()">Send Back
                        </button>
                       </td>
                       <td class="">98765432109</td>
                       <td class="">45632178905</td>
-                      <td class="">Lorem ipsum dolor sit amet, adipiscing eli</td>
+                      <td class="">Defective</td>
                       <td class="">12/03/2014</td>
                       <td class="text-center">
                         <div class="btn-group text-right">
@@ -270,13 +261,12 @@
                   
                     <tr>
                       <td class="text-center">
-                       <button type="button" class="btn btn-rounded btn-default btn-block btn-xs fs12"> 
-                         <a href="{{url('+sup')}}#"> Send Back
+                       <button type="button" class="btn btn-rounded btn-default btn-block btn-xs fs12" onclick="sendBack()">Send Back
                        </button>
                       </td>
                       <td class="">15963247803</td>
                       <td class="">84267951305</td>
-                      <td class="">Lorem ipsum dolor sit amet, adipiscing eli</td>
+                      <td class="">Defective</td>
                       <td class="">12/03/2014</td>
                       <td class="text-center">
                         <div class="btn-group text-right">
@@ -288,13 +278,12 @@
                   
                     <tr>
                       <td class="text-center">
-                       <button type="button" class="btn btn-rounded btn-default btn-block btn-xs fs12"> 
-                         <a href="{{url('+sup')}}#"> Send Back
+                       <button type="button" class="btn btn-rounded btn-default btn-block btn-xs fs12" onclick="sendBack()">Send Back
                        </button>
                       </td>
                       <td class="">31649785209</td>
                       <td class="">01346798520</td>
-                      <td class="">Lorem ipsum dolor sit amet, adipiscing eli</td>
+                      <td class="">Defective</td>
                       <td class="">12/03/2014</td>
                       <td class="text-center">
                         <div class="btn-group text-right">
@@ -317,6 +306,16 @@
   <!-- End: Main -->
 
   <!-- BEGIN: PAGE SCRIPTS -->
+
+  <script>
+    function sendBack() {
+        // Assuming you want to show an alert, you can customize this part
+        alert('Delivery successfully sent to supplier!');
+        
+        // If you want to redirect after showing the message, you can use window.location.href
+        // window.location.href = "{{url('+sup')}}#";
+    }
+  </script>
 
   <!-- jQuery -->
   <script src="vendor/jquery/jquery-1.11.1.min.js"></script>

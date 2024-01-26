@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>COMET.AL</title>
-    <link rel="shortcut icon" href="assets/img/logos/comet_al logo.png">
+    <link rel="shortcut icon" href="assets/img/logos/comet.al_logo1.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Glacial+Indifference&display=swap">
     <style>
