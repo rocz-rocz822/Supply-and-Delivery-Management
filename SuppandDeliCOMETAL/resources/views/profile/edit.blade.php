@@ -1,3 +1,7 @@
+<title>COMET.al | Supplier and Delivery Mgmt</title>
+
+<link rel="shortcut icon" href="{{ asset('admin/images/logo/favicon.ico')}}">
+
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">

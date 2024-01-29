@@ -15,12 +15,22 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('pages.dashboard');
 });
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    return view('pages.dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
+
+// Route::get('pages/index', [AdminController::class, 'dashboard'])->name('pages.index');
+Route::get('pages/delivered', [App\Http\Controllers\AdminController::class, 'delivered'])->name('pages.delivered');
+Route::get('pages/pending', [App\Http\Controllers\AdminController::class, 'pending'])->name('pages.pending');
+Route::get('pages/cancelled', [App\Http\Controllers\AdminController::class, 'cancelled'])->name('pages.cancelled');
+Route::get('pages/defective', [App\Http\Controllers\AdminController::class, 'defective'])->name('pages.defective');
+Route::get('pages/receipt', [App\Http\Controllers\AdminController::class, 'receipt'])->name('pages.receipt');
+Route::get('action/invoice', [App\Http\Controllers\AdminController::class, 'invoice'])->name('action.invoice');
+Route::get('pages/supply', [App\Http\Controllers\AdminController::class, 'supply'])->name('pages.supply');
+Route::post('action/create',[App\Http\Controllers\AdminController::class, 'create'])->name('action.create');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

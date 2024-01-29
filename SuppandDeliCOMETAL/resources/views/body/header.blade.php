@@ -2,7 +2,7 @@
     <header class="navbar navbar-fixed-top">
       <div class="navbar-branding">
     <!-- Logo -->
-        <a class="navbar-brand" href="{{url('pages/dashboard')}}">
+        <a class="navbar-brand" href="{{route('dashboard')}}">
           <img class="upperlogo" src="{{ asset('admin/images/logo/logo.png')}}" alt="COMET.AL" width="135">
         </a>
         <span id="toggle_sidemenu_l" class="ad ad-lines"></span>
@@ -40,8 +40,15 @@
           </a>
           <ul class="dropdown-menu list-group dropdown-persist w250" role="menu">
             <li class="list-group-item">
-              <a href="{{url('/')}}#" class="animated animated-short fadeInUp">
-                <span class="fa fa-power-off"></span> Logout </a>
+                <i class="mdi mdi-logout text-primary"></i>
+                <a class="dropdown-item" href="{{ route('logout') }}"
+                    onclick="event.preventDefault();
+                        document.getElementById('logout-form').submit();">
+                    Log Out
+                </a>
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                    @csrf
+                </form>
             </li>
           </ul>
         </li>

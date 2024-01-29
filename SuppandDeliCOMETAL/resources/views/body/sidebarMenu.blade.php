@@ -2,7 +2,7 @@
     <ul class="nav sidebar-menu">
         {{-- <li class="sidebar-label pt20">EMPLOYEE</li> --}}
         <li>
-            <a href="{{url('pages/dashboard')}}">
+            <a href="{{route('dashboard')}}">
                 <span class="fa-solid fa-house"></span>
                 <span class="sidebar-title">Dashbooard</span>
                 {{-- <span class="caret"></span> --}}
@@ -16,20 +16,10 @@
             </a>
             <ul class="nav sub-nav">
                 <li>
-                    <a href="{{url('pages/supply')}}">
+                    <a href="{{ url('pages/supply')}}">
                         <span class="glyphicon glyphicon-inbox"></span>
                         <span class="sidebar-title">Supply</span>
                     </a>
-                    <ul class="nav sub-nav sub-nav">
-                        <li>
-                            <a >
-                            <span class="glyphicon glyphicon-ok-circle"></span>  Delivered </a>
-                        </li>
-                        <li>
-                            <a href="{{url('pages/pending')}}">
-                            <span class="glyphicon glyphicon-time"></span>  Pending</a>
-                        </li>
-                    </ul>
                 </li>
                 <li>
                     <a class="accordion-toggle">
@@ -79,9 +69,9 @@
 <!-- CHANGED THIS -->
 <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
 
-    <div class="sidebar-toggle-mini">
+    {{-- <div class="sidebar-toggle-mini">
         <a href="employee_pending#">
             <span class="fa fa-sign-out"></span>
         </a>
-    </div>
+    </div> --}}
 <!-- End: Sidebar Menu -->

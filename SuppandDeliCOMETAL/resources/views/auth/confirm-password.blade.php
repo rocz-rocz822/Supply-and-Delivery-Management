@@ -1,3 +1,7 @@
+<title>COMET.al | Supplier and Delivery Mgmt</title>
+
+<link rel="shortcut icon" href="{{ asset('admin/images/logo/favicon.ico')}}">
+
 <x-guest-layout>
     <div class="mb-4 text-sm text-gray-600">
         {{ __('This is a secure area of the application. Please confirm your password before continuing.') }}

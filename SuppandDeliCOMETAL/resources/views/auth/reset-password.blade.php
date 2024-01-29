@@ -1,3 +1,7 @@
+<title>COMET.al | Supplier and Delivery Mgmt</title>
+
+<link rel="shortcut icon" href="{{ asset('admin/images/logo/favicon.ico')}}">
+
 <x-guest-layout>
     <form method="POST" action="{{ route('password.store') }}">
         @csrf
