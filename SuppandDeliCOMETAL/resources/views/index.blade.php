@@ -184,13 +184,13 @@
     // Init Demo JS
     Demo.init();
 
-    // // Init DataTables
-    // $('#datatable').dataTable({
-    //   "sDom": '',
-    //   "oTableTools": {
-    //     "sSwfPath": "vendor/plugins/datatables/extensions/TableTools/swf/copy_csv_xls_pdf.swf"
-    //   }
-    // });
+    // Init DataTables
+     $('#datatable').dataTable({
+       "sDom": '',
+       "oTableTools": {
+        "sSwfPath": "vendor/plugins/datatables/extensions/TableTools/swf/copy_csv_xls_pdf.swf"
+       }
+    });
 
   });
   </script>
