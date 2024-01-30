@@ -32,8 +32,8 @@
                                     <th class="">Stock Order ID</th>
                                     <th class="">Carrier Name</th>
                                     <th class="">Delivery Date and Time</th>
-                                    <th class="">Exact Arrival</th>
-                                    <th class="">Estimated Arrival</th>
+                                    <th class="">Action</th>
+                                    {{-- <th class="">Estimated Arrival</th> --}}
                                     {{-- <th class="text-center">Status</th> --}}
                                 </tr>
                             </thead>

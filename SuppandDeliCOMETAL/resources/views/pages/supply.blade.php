@@ -40,38 +40,38 @@
                                                 aria-controls="datatable" rowspan="1" colspan="1"
                                                 aria-label="Name: activate to sort column ascending"
                                                 style="width: 44px;" aria-sort="descending">
-                                                Supply ID
+                                                Stock Order ID
                                             </th>
                                             <th data-column-index="1" class="sorting" tabindex="0"
                                                 aria-controls="datatable" rowspan="1" colspan="1"
                                                 aria-label="Position: activate to sort column ascending"
                                                 style="width: 51px;">
-                                                Position
+                                                Carrier Name
                                             </th>
                                             <th data-column-index="2" class="sorting" tabindex="0"
                                                 aria-controls="datatable" rowspan="1" colspan="1"
                                                 aria-label="Office: activate to sort column ascending"
                                                 style="width: 45px;">
-                                                Office
+                                                Action
                                             </th>
                                             <th data-column-index="3" class="sorting" tabindex="0"
                                                 aria-controls="datatable" rowspan="1"colspan="1"
                                                 aria-label="Age: activate to sort column ascending"
                                                 style="width: 23px;">
-                                                Age
+                                                Status
                                             </th>
-                                            <th data-column-index="4" class="sorting" tabindex="0"
+                                            {{-- <th data-column-index="4" class="sorting" tabindex="0"
                                                 aria-controls="datatable" rowspan="1"colspan="1"
                                                 aria-label="Start date: activate to sort column ascending"
                                                 style="width: 51px;">
-                                                Start date
-                                            </th>
-                                            <th data-column-index="5" class="sorting" tabindex="0"
+                                                Date
+                                            </th> --}}
+                                            {{-- <th data-column-index="5" class="sorting" tabindex="0"
                                                 aria-controls="datatable" rowspan="1" colspan="1"
                                                 aria-label="Salary: activate to sort column ascending"
                                                 style="width: 38px;">
                                                 Salary
-                                            </th>
+                                            </th> --}}
                                         </tr>
                                     </thead>
                                     <tbody>

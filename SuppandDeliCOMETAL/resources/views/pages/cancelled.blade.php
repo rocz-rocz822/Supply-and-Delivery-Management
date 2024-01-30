@@ -21,10 +21,11 @@
                         <table class="table">
                             <thead>
                                 <tr class="bg-light">
-                                    <th class="text-center">Transaction ID</th>
-                                    <th class="">Delivery ID</th>
-                                    <th class="">Returned Quantity</th>
-                                    <th class="">Date Returned</th>
+                                    <th class="text-center">Delivery ID</th>
+                                    <th class="">Stock Order ID</th>
+                                    <th class="">Transaction ID</th>
+                                    <th class="">Date and Time Returned</th>
+                                    <th class="">Invoice</th>
                                 </tr>
                             </thead>
                             <tbody>
