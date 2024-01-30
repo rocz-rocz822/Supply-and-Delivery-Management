@@ -39,6 +39,6 @@ class AdminController extends Controller
     }
 
     public function invoice() {
-        return view('pages.invoice');
+        return view('action.invoice');
     }
 }

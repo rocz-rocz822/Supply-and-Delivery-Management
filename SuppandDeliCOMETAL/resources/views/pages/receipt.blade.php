@@ -51,7 +51,7 @@
                                    <td class="text-center">
                                         <div class="btn-group text-center">
                                         <a type="button" class="btn btn-sm btn-default btn-block"
-                                                href="{{url('pages/invoice')}}#"><b>Invoice</b>
+                                                href="{{url('action/invoice')}}#"><b>Invoice</b>
                                         </a>
                                         </div>
                                     </td>
@@ -66,7 +66,7 @@
                                    <td class="text-center">
                                         <div class="btn-group text-center">
                                         <a type="button" class="btn btn-sm btn-default btn-block"
-                                                href="{{url('pages/invoice')}}#"><b>Invoice</b>
+                                                href="{{url('action/invoice')}}#"><b>Invoice</b>
                                         </a>
                                         </div>
                                     </td>
@@ -81,7 +81,7 @@
                                    <td class="text-center">
                                         <div class="btn-group text-center">
                                         <a type="button" class="btn btn-sm btn-default btn-block"
-                                                href="{{url('pages/invoice')}}#"><b>Invoice</b>
+                                                href="{{url('action/invoice')}}#"><b>Invoice</b>
                                         </a>
                                         </div>
                                     </td>
@@ -96,7 +96,7 @@
                                    <td class="text-center">
                                         <div class="btn-group text-center">
                                         <a type="button" class="btn btn-sm btn-default btn-block"
-                                                href="{{url('pages/invoice')}}#"><b>Invoice</b>
+                                                href="{{url('action/invoice')}}#"><b>Invoice</b>
                                         </a>
                                         </div>
                                     </td>
@@ -111,7 +111,7 @@
                                    <td class="text-center">
                                         <div class="btn-group text-center">
                                         <a type="button" class="btn btn-sm btn-default btn-block"
-                                                href="{{url('pages/invoice')}}#"><b>Invoice</b>
+                                                href="{{url('action/invoice')}}#"><b>Invoice</b>
                                         </a>
                                         </div>
                                     </td>
@@ -126,7 +126,7 @@
                                    <td class="text-center">
                                         <div class="btn-group text-center">
                                         <a type="button" class="btn btn-sm btn-default btn-block"
-                                                href="{{url('pages/invoice')}}#"><b>Invoice</b>
+                                                href="{{url('action/invoice')}}#"><b>Invoice</b>
                                         </a>
                                         </div>
                                     </td>
@@ -141,7 +141,7 @@
                                    <td class="text-center">
                                         <div class="btn-group text-center">
                                         <a type="button" class="btn btn-sm btn-default btn-block"
-                                                href="{{url('pages/invoice')}}#"><b>Invoice</b>
+                                                href="{{url('action/invoice')}}#"><b>Invoice</b>
                                         </a>
                                         </div>
                                     </td>
@@ -156,7 +156,7 @@
                                    <td class="text-center">
                                         <div class="btn-group text-center">
                                         <a type="button" class="btn btn-sm btn-default btn-block"
-                                                href="{{url('pages/invoice')}}#"><b>Invoice</b>
+                                                href="{{url('action/invoice')}}#"><b>Invoice</b>
                                         </a>
                                         </div>
                                     </td>
@@ -171,7 +171,7 @@
                                    <td class="text-center">
                                         <div class="btn-group text-center">
                                         <a type="button" class="btn btn-sm btn-default btn-block"
-                                                href="{{url('pages/invoice')}}#"><b>Invoice</b>
+                                                href="{{url('action/invoice')}}#"><b>Invoice</b>
                                         </a>
                                         </div>
                                     </td>
@@ -186,7 +186,7 @@
                                    <td class="text-center">
                                         <div class="btn-group text-center">
                                         <a type="button" class="btn btn-sm btn-default btn-block"
-                                                href="{{url('pages/invoice')}}#"><b>Invoice</b>
+                                                href="{{url('action/invoice')}}#"><b>Invoice</b>
                                         </a>
                                         </div>
                                     </td>
@@ -201,7 +201,7 @@
                                    <td class="text-center">
                                         <div class="btn-group text-center">
                                         <a type="button" class="btn btn-sm btn-default btn-block"
-                                                href="{{url('pages/invoice')}}#"><b>Invoice</b>
+                                                href="{{url('action/invoice')}}#"><b>Invoice</b>
                                         </a>
                                         </div>
                                     </td>
@@ -216,7 +216,7 @@
                                    <td class="text-center">
                                         <div class="btn-group text-center">
                                         <a type="button" class="btn btn-sm btn-default btn-block"
-                                                href="{{url('pages/invoice')}}#"><b>Invoice</b>
+                                                href="{{url('action/invoice')}}#"><b>Invoice</b>
                                         </a>
                                         </div>
                                     </td>
@@ -231,7 +231,7 @@
                                    <td class="text-center">
                                         <div class="btn-group text-center">
                                         <a type="button" class="btn btn-sm btn-default btn-block"
-                                                href="{{url('pages/invoice')}}#"><b>Invoice</b>
+                                                href="{{url('action/invoice')}}#"><b>Invoice</b>
                                         </a>
                                         </div>
                                     </td>

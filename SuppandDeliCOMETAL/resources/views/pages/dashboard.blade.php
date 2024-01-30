@@ -2,6 +2,7 @@
 @section('admin')
 
 <!-- Begin: Content -->
+<<<<<<< HEAD
 <section id="content" class="table-layout animated fadeIn">
 
 <!-- begin: .tray-center -->
@@ -15,6 +16,80 @@
           <h1 class="fs30 mt5 mbn">1,426</h1>
           <h6 class="text-system">NEW ORDERS</h6>
         </div>
+=======
+<section id="content" class="animated fadeIn">
+
+<!-- Dashboard Tiles -->
+<div class="row mb10">
+  <div class="col-sm-6 col-md-3">
+    <div class="panel bg-alert light of-h mb10">
+      <div class="pn pl20 p5">
+        <div class="icon-bg">
+          <i class="fa fa-comments-o"></i>
+        </div>
+        <h2 class="mt15 lh15">
+          <b>523</b>
+        </h2>
+        <h5 class="text-muted">Comments</h5>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-3">
+    <div class="panel bg-info light of-h mb10">
+      <div class="pn pl20 p5">
+        <div class="icon-bg">
+          <i class="fa fa-twitter"></i>
+        </div>
+        <h2 class="mt15 lh15">
+          <b>348</b>
+        </h2>
+        <h5 class="text-muted">Tweets</h5>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-3">
+    <div class="panel bg-danger light of-h mb10">
+      <div class="pn pl20 p5">
+        <div class="icon-bg">
+          <i class="fa fa-bar-chart-o"></i>
+        </div>
+        <h2 class="mt15 lh15">
+          <b>267</b>
+        </h2>
+        <h5 class="text-muted">Reach</h5>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-3">
+    <div class="panel bg-warning light of-h mb10">
+      <div class="pn pl20 p5">
+        <div class="icon-bg">
+          <i class="fa fa-envelope"></i>
+        </div>
+        <h2 class="mt15 lh15">
+          <b>714</b>
+        </h2>
+        <h5 class="text-muted">Comments</h5>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<section id="content" class="table-layout animated fadeIn">
+
+<!-- begin: .tray-center -->
+<div class="tray tray-center">
+
+  <!-- dashboard tiles -->
+  <div class="row">
+    <div class="col-sm-4 col-xl-3">
+      <div class="panel panel-tile text-center br-a br-grey">
+        <div class="panel-body">
+          <h1 class="fs30 mt5 mbn">1,426</h1>
+          <h6 class="text-system">NEW ORDERS</h6>
+        </div>
+>>>>>>> NewBranch(SDMGMT)
         <div class="panel-footer br-t p12">
           <span class="fs11">
             <i class="fa fa-arrow-up pr5"></i> 3% INCREASE
@@ -360,6 +435,7 @@
         <!-- end: .tray-center -->
     </section>
 {{-- End Section --}}
-    @include('body.footer')
+
+@include('body.footer')
 
 @endsection
