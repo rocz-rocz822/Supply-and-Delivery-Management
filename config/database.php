@@ -72,6 +72,14 @@ return [
 				PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
 			]) : [],
 		],
+		// Test Version
+		'sqlite_spl_dlv' => [
+			'driver' => 'sqlite',
+            'url' => env('DATABASE_URL_SPL_DLV'),
+            'database' => env('DB_DATABASE_SPL_DLV', database_path('database.sqlite')),
+            'prefix' => '',
+            'foreign_key_constraints' => env('DB_FOREIGN_KEYS', true),
+		],
 
         // For Product and Inventory
         'mysql_prd_inv' => [
@@ -101,6 +109,14 @@ return [
 			'options' => extension_loaded('pdo_mysql') ? array_filter([
 				PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
 			]) : [],
+		],
+		// Test Version
+		'sqlite_prd_inv' => [
+			'driver' => 'sqlite',
+            'url' => env('DATABASE_URL_PRD_INV'),
+            'database' => env('DB_DATABASE_PRD_INV', database_path('database.sqlite')),
+            'prefix' => '',
+            'foreign_key_constraints' => env('DB_FOREIGN_KEYS', true),
 		],
 
         'pgsql' => [

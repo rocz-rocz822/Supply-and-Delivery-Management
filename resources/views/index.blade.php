@@ -129,6 +129,7 @@
 	<script src="{{ asset('admin/js/demo/demo.js')}}"></script>
 	<script src="{{ asset('admin/js/main.js')}}"></script>
 	<script type="text/javascript">
+	@yield('jsInject')
 
 	jQuery(document).ready(function() {
 
@@ -185,12 +186,8 @@
 		Demo.init();
 
 		// Init DataTables
-		 $('#datatable').dataTable({
-			 "sDom": '',
-			 "oTableTools": {
-				"sSwfPath": "vendor/plugins/datatables/extensions/TableTools/swf/copy_csv_xls_pdf.swf"
-			 }
-		});
+		if (!(disableDataTable ?? false))
+			$('#datatable').dataTable();
 
 	});
 	</script>

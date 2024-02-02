@@ -61,4 +61,19 @@ class User extends Authenticatable
 	 * Get the role that owns the user.
 	 */
 	public function role() { return $this->belongsTo(Role::class); }
+
+	// ---------------------------------------------------
+	// Methods
+	// ---------------------------------------------------
+
+	/**
+	 * Get the user's full name.
+	 *
+	 * @return string
+	 */
+	public function getName($includeMiddleName = false) {
+		$middle = $includeMiddleName ? " {$this->middle_name} " : ' ';
+
+		return "{$this->first_name}{$middle}{$this->last_name}";
+	}
 }

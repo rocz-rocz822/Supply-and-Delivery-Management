@@ -2,13 +2,17 @@
 
 namespace App\Http\Controllers\Auth;
 
+use Illuminate\Http\RedirectResponse;
+use Illuminate\Http\Request;
+use Illuminate\View\View;
+
+use Laravel\Sanctum\Sanctum;
+
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Auth\LoginRequest;
 use App\Providers\RouteServiceProvider;
-use Illuminate\Http\RedirectResponse;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\View\View;
+
+use Auth;
 
 class AuthenticatedSessionController extends Controller
 {
@@ -17,6 +21,8 @@ class AuthenticatedSessionController extends Controller
      */
     public function create(): View
     {
+		if (auth()->check())
+			return redirect()->route('dashboard');
         return view('auth.login');
     }
 
@@ -29,7 +35,15 @@ class AuthenticatedSessionController extends Controller
 
         $request->session()->regenerate();
 
-        return redirect()->intended(RouteServiceProvider::HOME);
+		$token = auth()->user()->createToken('authenticated');
+		if ($expiration = config('sanctum.expiration')) {
+			$model = Sanctum::$personalAccessTokenModel;
+			$model::where('created_at', '<', now()->subMinutes($expiration))->delete();
+		}
+
+		session(["bearer" => $token->plainTextToken]);
+
+        return redirect()->intended('/dashboard');
     }
 
     /**
@@ -43,6 +57,6 @@ class AuthenticatedSessionController extends Controller
 
         $request->session()->regenerateToken();
 
-        return redirect('/');
+        return redirect(RouteServiceProvider::HOME);
     }
 }

@@ -6,20 +6,14 @@ use Illuminate\Http\Request;
 
 class AdminController extends Controller
 {
-    public function dashboard() {
+	protected function index() {
+		if (auth()->check())
+			return redirect()->route('dashboard');
+		return redirect()->route('login', [], 301);
+	}
+
+    protected function dashboard() {
         return view('pages.dashboard');
-    }
-
-    public function supply() {
-        return view('pages.supply');
-    }
-
-    public function create() {
-        return view('action.create');
-    }
-
-    public function delivered() {
-        return view('pages.delivered');
     }
 
     public function cancelled() {

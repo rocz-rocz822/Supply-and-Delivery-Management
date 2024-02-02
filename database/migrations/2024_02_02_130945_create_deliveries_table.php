@@ -14,9 +14,7 @@ return new class extends Migration
         Schema::connection('mysql_spl_dlv')->create('deliveries', function (Blueprint $table) {
             $table->id();
 			$table->string('courier_name');
-			$table->string('tracking_number');
-			$table->timestamp('estimated_delivery_at');
-			$table->timestamp('delivered_at')->nullable();
+			$table->timestamp('shipped_at')->nullable();
             $table->timestamps();
         });
     }

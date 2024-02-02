@@ -49,4 +49,39 @@ class Category extends Model
 	 * Get the product categories for the category.
 	 */
 	public function productCategories() { return $this->hasMany(ProductCategory::class); }
+
+	// ---------------------------------------------------
+	// Methods
+	// ---------------------------------------------------
+
+	/**
+	 * Get the validation rules that apply to the request.
+	 *
+	 * @return array<string, string>
+	 */
+	public static function getValidationRules(): array
+	{
+		return [
+			'category' => [
+				'required',
+				'numeric',
+				'min:1',
+				'exists:mysql_prd_inv.categories,id'],
+		];
+	}
+
+	/**
+	 * Get the validation messages that apply to the request.
+	 *
+	 * @return array<string, string>
+	 */
+	public static function getValidationMsgs(): array
+	{
+		return [
+			'category.required' => 'Please select a category.',
+			'category.numeric' => 'Please refrain from modifying the form.',
+			'category.min' => 'Please select a valid category.',
+			'category.exists' => 'Selected category does not exists anymore.',
+		];
+	}
 }
