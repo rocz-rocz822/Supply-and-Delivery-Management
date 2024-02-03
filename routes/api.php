@@ -30,7 +30,7 @@ Route::group(['namespace' => "App\Http\Controllers"], function() {
 			/////////////////////
 			Route::group(['prefix' => 'delivery'], function() {
 				// Store
-				Route::get('/store', 'DeliveryController@store')->name('e-commerce.delivery.store');
+				Route::post('/store', 'DeliveryController@store')->name('e-commerce.delivery.store');
 			});
 
 			////////////////////////
@@ -38,7 +38,15 @@ Route::group(['namespace' => "App\Http\Controllers"], function() {
 			////////////////////////
 			Route::group(['prefix' => 'stock-order'], function() {
 				// Store
-				Route::post('store', 'StockOrder@store')->name('e-commerce.stock_order.store');
+				Route::post('store', 'StockOrderController@store')->name('e-commerce.stock_order.store');
+			});
+
+			////////////////////////
+			// TRANSACTION ROUTES //
+			////////////////////////
+			Route::group(['prefix' => 'transaction'], function() {
+				// Store
+				Route::post('store', 'TransactionController@store')->name('e-commerce.transaction.store');
 			});
 		});
 	});

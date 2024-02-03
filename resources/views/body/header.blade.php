@@ -1,14 +1,14 @@
 	<!-- Start: Header -->
 	<header class="navbar navbar-fixed-top">
 		<div class="navbar-branding">
-	<!-- Logo -->
-		<a class="navbar-brand" href="{{route('dashboard')}}">
+		<!-- Logo -->
+		<a class="navbar-brand" href="{{route('e-commerce.supply.index')}}">
 			<img class="upperlogo" src="{{ asset('admin/images/logo/logo.png')}}" alt="COMET.AL" width="135">
 		</a>
 		<span id="toggle_sidemenu_l" class="ad ad-lines"></span>
 		</div>
 
-	<!-- Full Screen -->
+		<!-- Full Screen -->
 		<ul class="nav navbar-nav navbar-left">
 		<li class="hidden-xs">
 			<a class="request-fullscreen toggle-active">
@@ -43,10 +43,10 @@
 
 			<ul class="dropdown-menu list-group dropdown-persist w250" role="menu">
 				{{-- PROFILE --}}
-				<li class="list-group-item">
+				{{-- <li class="list-group-item">
 					<i class="mdi mdi-account-outline text-primary"></i>
 					<a href="{{ route('profile.index') }}" class="dropdown-item">Profile</a>
-				</li>
+				</li> --}}
 
 				{{-- LOGOUT --}}
 				<li class="list-group-item">

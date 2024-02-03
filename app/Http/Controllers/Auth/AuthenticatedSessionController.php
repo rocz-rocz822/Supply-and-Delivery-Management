@@ -22,7 +22,7 @@ class AuthenticatedSessionController extends Controller
     public function create(): View
     {
 		if (auth()->check())
-			return redirect()->route('dashboard');
+			return redirect()->route('e-commerce.supply.index');
         return view('auth.login');
     }
 
@@ -43,7 +43,7 @@ class AuthenticatedSessionController extends Controller
 
 		session(["bearer" => $token->plainTextToken]);
 
-        return redirect()->intended('/dashboard');
+        return redirect()->intended('/e-commerce/supply');
     }
 
     /**

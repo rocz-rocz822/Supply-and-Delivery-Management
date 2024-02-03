@@ -43,7 +43,7 @@ class Permissions
 
 		if (!$sanctum) {
 			return redirect()
-				->route('admin.dashboard')
+				->route('e-commerce.supply.index')
 				->with('flash_info', 'Access Denied')
 				->with('has_icon', 'true')
 				->with('message', 'Redirected back to previous page.')

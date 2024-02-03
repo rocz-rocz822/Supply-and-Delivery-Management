@@ -1,4 +1,4 @@
-r<?php
+<?php
 
 namespace App\Models;
 
@@ -109,10 +109,10 @@ class StockOrder extends Model
 		$rules = [
 			'quantity' => ['required', 'integer', 'min:1'],
 			'tracking_number' => ['required', 'string', 'between:8,40'],
-			'product_id' => ['required', 'integer', 'exists:' . Product::$connection . '.products,id'],
-			'supplier_id' => ['required', 'integer', 'exists:' . User::$connection . '.users,id'],
-			'transaction_id' => ['nullable', 'integer', 'exists:' . Transaction::$connection . '.transactions,id'],
-			'delivery_id' => ['nullable', 'integer', 'exists:' . Delivery::$connection . '.deliveries,id'],
+			'product_id' => ['required', 'integer', 'exists:mysql_prd_inv.products,id'],
+			'supplier_id' => ['required', 'integer', 'exists:mysql_spl_dlv.users,id'],
+			'transaction_id' => ['nullable', 'integer', 'exists:mysql_spl_dlv.transactions,id'],
+			'delivery_id' => ['nullable', 'integer', 'exists:mysql_spl_dlv.deliveries,id'],
 			'status' => ['nullable', 'integer', 'between:0,4'],
 			'estimated_delivery_at' => ['required', 'date', 'after_or_equal:today'],
 		];
@@ -168,5 +168,13 @@ class StockOrder extends Model
 		];
 
 		return $onlyDeliveredAt ? $dlvAt : array_merge($dlvAt, $msg);
+	}
+
+	public static function generateTrackingNumber(): string
+	{
+		return preg_replace(
+			'/^(.{' . rand(3, 5) . '})(.{' . rand(3, 5) . '})(.{' . rand(6, 10) . '})(.*$)/', "$1-$2-$3",
+			str()->ulid()
+		);
 	}
 }

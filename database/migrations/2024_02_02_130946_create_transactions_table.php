@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::connection('mysql_spl_dlv')->create('transactions', function (Blueprint $table) {
             $table->id();
+			$table->string('transaction_number')->unique();
             $table->timestamps();
         });
     }

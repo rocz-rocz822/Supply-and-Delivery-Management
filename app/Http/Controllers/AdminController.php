@@ -8,20 +8,16 @@ class AdminController extends Controller
 {
 	protected function index() {
 		if (auth()->check())
-			return redirect()->route('dashboard');
+			return redirect()->route('e-commerce.supply.index');
 		return redirect()->route('login', [], 301);
 	}
 
-    protected function dashboard() {
-        return view('pages.dashboard');
-    }
+    // protected function dashboard() {
+    //     return view('pages.dashboard');
+    // }
 
     public function cancelled() {
         return view('pages.cancelled');
-    }
-
-    public function pending() {
-        return view('pages.pending');
     }
 
     public function defective() {

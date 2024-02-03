@@ -13,13 +13,21 @@ use Validator;
 
 class DeliveryController extends Controller
 {
-	protected function index() {
-		return view('pages.delivered');
+	// PENDING //
+	protected function indexPending() {
+		$deliveries = StockOrder::where('status', '<=', 1)
+			->get();
+
+		return view('pages.pending', [
+			'pendings' => $deliveries,
+		]);
 	}
 
 	/////////////////
 	// API METHODS //
 	/////////////////
+
+	// PENDING //
 	protected function store(Request $req) {
 		$validator = Validator::make(
 			$req->all(),
@@ -49,7 +57,7 @@ class DeliveryController extends Controller
 			DB::commit();
 		} catch (Exception $e) {
 			DB::rollBack();
-			Log::error($e->getMessage());
+			Log::error($e);
 
 			return response()->json([
 				'success' => false,

@@ -16,7 +16,6 @@ use Illuminate\Support\Facades\Route;
 
 // Route::get('pages/index', [AdminController::class, 'dashboard'])->name('pages.index');
 Route::get('pages/delivered', [App\Http\Controllers\AdminController::class, 'delivered'])->name('pages.delivered');
-Route::get('pages/pending', [App\Http\Controllers\AdminController::class, 'pending'])->name('pages.pending');
 Route::get('pages/cancelled', [App\Http\Controllers\AdminController::class, 'cancelled'])->name('pages.cancelled');
 Route::get('pages/defective', [App\Http\Controllers\AdminController::class, 'defective'])->name('pages.defective');
 Route::get('pages/receipt', [App\Http\Controllers\AdminController::class, 'receipt'])->name('pages.receipt');
@@ -30,7 +29,7 @@ Route::group(['namespace' => "App\Http\Controllers"], function() {
 
 	Route::group(['middleware' => ['auth', 'verified']], function () {
 		// Dashboard
-		Route::get('/dashboard', 'AdminController@dashboard')->name('dashboard');
+		// Route::get('/dashboard', 'AdminController@dashboard')->name('dashboard');
 
 		///////////////////////////////
 		// E-COMMERCE RELATED ROUTES //
@@ -46,34 +45,39 @@ Route::group(['namespace' => "App\Http\Controllers"], function() {
 				// Create
 				Route::get('create', 'SupplyController@create')->name('e-commerce.supply.create');
 				Route::post('store', 'SupplyController@store')->name('e-commerce.supply.store');
+
+				// Deliver
+				Route::post('deliver', 'SupplyController@deliver')->name('e-commerce.supply.deliver');
+
+				// Delete
+				Route::delete('destroy/{id}', 'SupplyController@destroy')->name('e-commerce.supply.destroy');
 			});
 
 			////////////////////////
-			// STOCK ORDER ROUTES //
+			// DELIVERY ROUTES //
 			////////////////////////
 			Route::group(['prefix' => 'delivery'], function() {
-				// Index
-				Route::get('/', 'DeliveryController@index')->name('e-commerce.delivery.index');
-
-				// Create
-				// Route::get('create', 'xxxxxxxxxxxxxxxxxx@xxxxxx')->name('e-commerce.delivery.create');
-				// Route::post('store', 'xxxxxxxxxxxxxxxxxx@xxxxx')->name('e-commerce.delivery.store');
+				// PENDING //
+				Route::group(['prefix' => 'pending'], function() {
+					// Index
+					Route::get('/', 'DeliveryController@indexPending')->name('e-commerce.delivery.pending');
+				});
 			});
 		});
 
 		////////////////////
 		// PROFILE ROUTES //
 		////////////////////
-		Route::group(['prefix' => 'profile'], function() {
-			// Index
-			Route::get('/', 'ProfileController@index')->name('profile.index');
+		// Route::group(['prefix' => 'profile'], function() {
+		// 	// Index
+		// 	Route::get('/', 'ProfileController@index')->name('profile.index');
 
-			// Update
-			Route::patch('/', 'ProfileController@update')->name('profile.update');
+		// 	// Update
+		// 	Route::patch('/', 'ProfileController@update')->name('profile.update');
 
-			// Destroy
-			Route::delete('/', 'ProfileController@destroy')->name('profile.destroy');
-		});
+		// 	// Destroy
+		// 	Route::delete('/', 'ProfileController@destroy')->name('profile.destroy');
+		// });
 	});
 });
 

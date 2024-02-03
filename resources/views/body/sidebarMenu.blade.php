@@ -2,13 +2,13 @@
     <ul class="nav sidebar-menu">
         {{-- <li class="sidebar-label pt20">EMPLOYEE</li> --}}
 		{{-- DASHBOARD --}}
-        <li class="{{ Request::is('dashboard') ? 'active' : '' }}">
+        {{-- <li class="{{ Request::is('dashboard') ? 'active' : '' }}">
             <a href="{{route('dashboard')}}">
                 <span class="fa-solid fa-house"></span>
                 <span class="sidebar-title">Dashbooard</span>
-                {{-- <span class="caret"></span> --}}
+                <span class="caret"></span>
             </a>
-        </li>
+        </li> --}}
 
 		{{-- E-COMMERCE --}}
         <li class="{{ Request::is('e-commerce*') ? 'active' : '' }}">
@@ -38,14 +38,14 @@
                     <ul class="nav sub-nav sub-nav">
 						{{-- DELIVERED --}}
                         <li class="{{ Request::is('e-commerce/delivery') ? 'active' : '' }}">
-                            <a href="{{ route('e-commerce.delivery.index') }}">
+                            <a href="{{ route('pages.delivered') }}">
                             	<span class="glyphicon glyphicon-ok-circle"></span> Delivered
 							</a>
                         </li>
 
 						{{-- PEDNING --}}
                         <li class="{{ Request::is('e-commerce/delivery/pending*') ? 'active' : '' }}">
-                            <a href="{{url('pages/pending')}}">
+                            <a href="{{ route('e-commerce.delivery.pending') }}">
                             	<span class="glyphicon glyphicon-time"></span> Pending
 							</a>
                         </li>
