@@ -15,19 +15,10 @@ class CategorySeeder extends Seeder
     public function run(): void
     {
 		$categories = [
-			'Electronics' => 'Electronic Devices and Accessories',
-			'Fashion' => 'Clothing, Shoes, and Accessories',
-			'Health' => 'Health and Personal Care',
-			'Home' => 'Home and Kitchen',
-			'Industrial' => 'Industrial and Scientific',
-			'Jewelry' => 'Jewelry and Watches',
-			'Music' => 'Musical Instruments',
-			'Office' => 'Office Products',
-			'Software' => 'Software',
-			'Sports' => 'Sports and Outdoors',
-			'Tools' => 'Tools and Home Improvement',
-			'Toys' => 'Toys and Games',
-			'Games' => 'Video Games',
+			'Ring' => 'Ring',
+			'Necklace' => 'Necklace',
+			'Bracelet' => 'Bracelet',
+			'Package Set' => 'Package',
 		];
 
 		foreach ($categories as $category => $description) {
