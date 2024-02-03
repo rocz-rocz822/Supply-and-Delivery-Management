@@ -62,6 +62,9 @@ Route::group(['namespace' => "App\Http\Controllers"], function() {
 					// Index
 					Route::get('/', 'DeliveryController@indexPending')->name('e-commerce.delivery.pending');
 				});
+
+				// Update
+				Route::patch('update/{id}/status', 'DeliveryController@updateStatus')->name('e-commerce.delivery.update.status');
 			});
 		});
 

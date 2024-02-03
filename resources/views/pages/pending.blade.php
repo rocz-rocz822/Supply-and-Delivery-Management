@@ -40,16 +40,49 @@
 								@forelse ($pendings as $pending)
                                 <tr>
                                     <td class="text-center">{{ $pending->tracking_number }}</td>
-                                    <td class="">{{ $pending->supplier->getName() }}</td>
-                                    <td class="">{{ $pending->transaction->transaction_number }}</td>
-                                    <td class="">{{ $pending->delivery->courier_name }}</td>
-                                    <td class="">{{ $pending->estimated_delivery_at->format('M d, Y') }}</td>
-                                    <td class="">{{ $pending->getStatus() }}</td>
-                                    <td class=""></td>
+                                    <td>{{ $pending->supplier->getName() }}</td>
+                                    <td>{{ $pending->transaction->transaction_number }}</td>
+                                    <td>{{ $pending->delivery->courier_name }}</td>
+                                    <td>{{ $pending->estimated_delivery_at->format('M d, Y') }}</td>
+                                    <td>{{ $pending->getStatus() }}</td>
+
+									{{-- Action Button Group --}}
+                                    <td>
+										<div class="btn-group">
+											{{-- If the stock is newly created --}}
+											@if ($pending->getStatus() == 'Created')
+											<button data-value="1"
+												data-action="{{ route('e-commerce.delivery.update.status', [$pending->id]) }}"
+												class="btn btn-xs btn-success action-button">
+												Deliver
+											</button>
+
+											<button data-value="3"
+												data-action="{{ route('e-commerce.delivery.update.status', [$pending->id]) }}"
+												class="btn btn-xs btn-danger action-button">
+												Cancel
+											</button>
+
+											{{-- If the stock is now pending --}}
+											@elseif ($pending->getStatus() == 'Pending')
+											<button data-value="2"
+												data-action="{{ route('e-commerce.delivery.update.status', [$pending->id]) }}"
+												class="btn btn-xs btn-success action-button">
+												Complete
+											</button>
+
+											<button data-value="3"
+												data-action="{{ route('e-commerce.delivery.update.status', [$pending->id]) }}"
+												class="btn btn-xs btn-danger action-button">
+												Cancel
+											</button>
+											@endif
+										</div>
+									</td>
                                 </tr>
 								@empty
 								<tr>
-									<td colspan="5" class="text-center">No pending records</td>
+									<td colspan="7" class="text-center">No pending records</td>
 								</tr>
 								@endforelse
                             </tbody>
@@ -58,10 +91,33 @@
                 </div>
             </div>
 
+			{{-- Hidden action form --}}
+			<form id="action-form"
+				method="post"
+				class="hidden">
+				@csrf
+				@method('PATCH')
+				<input type="hidden" id="status" name="status" value="">
+			</form>
+
             @include('body.footer')
         </div>
         <!-- end: .tray-center -->
     </section>
     <!-- // End: Content -->
+@endsection
 
+@section('jsInject')
+let	actionForm = document.querySelector('#action-form');
+let statusFld = actionForm.querySelector('#status');
+
+document.addEventListener('click', (e) => {
+	let	target;
+	if (target = e.target.closest('.action-button')) {
+		e.preventDefault();
+		actionForm.action = target.dataset.action;
+		statusFld.value = target.dataset.value;
+		actionForm.submit();
+	}
+});
 @endsection
