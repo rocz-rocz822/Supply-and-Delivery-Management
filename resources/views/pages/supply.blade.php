@@ -119,14 +119,9 @@
 
 											{{-- Action Button Group --}}
 											<td class="text-center">
-												<form id="delete-{{ $index }}" method="POST" action="{{ route('e-commerce.supply.destroy', [$supply->id]) }}">
-													@csrf
-													@method('DELETE')
-
-													<button type="submit" form="delete-{{ $index }}" class="btn btn-danger">
-														Delete
-													</button>
-												</form>
+												<button type="button" form="delete-supply" class="btn btn-danger" data-action="{{ route('e-commerce.supply.destroy', [$supply->id]) }}" onclick="document.querySelector(`#delete-supply`).action = this.dataset.action; document.querySelector(`#delete-supply`).submit();">
+													Delete
+												</button>
 											</td>
 
 											{{-- Conditional Error Message when the item encounters a validation error --}}
@@ -148,7 +143,7 @@
 										@php($index++)
 										@empty
 										<tr role="row" class="even">
-											<td class="text-center" colspan="4">No Record Found</td>
+											<td class="text-center" colspan="5">No Record Found</td>
 										</tr>
 										@endforelse
 									</tbody>
@@ -170,14 +165,18 @@
 											{{-- BUTTONS --}}
 											<td colspan="@error('supplies.*') 2 @else 5 @enderror">
 												<div class="text-right">
-													<button type="button" onclick="document.querySelector(`#datatable_wrapper`).submit();" class="btn btn-primary">Submit</button>
+													<button type="submit" class="btn btn-primary">Submit</button>
 													<button type="button" onclick="document.querySelectorAll(`[name='supplies[]']`).forEach(v => v.checked = true);" class="btn btn-default">Check All</button>
 													<button type="reset" class="btn btn-default">Uncheck All</button>
 												</div>
 											</td>
 										</tr>
 								</table>
-								@method('POST')
+							</form>
+
+							<form id="delete-supply" method="POST">
+								@csrf
+								@method('DELETE')
 							</form>
 						</div>
 					</div>
