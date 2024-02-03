@@ -26,13 +26,13 @@
 						<table class="table admin-form theme-warning tc-checkbox-1 fs13">
 							<thead>
 								<tr class="bg-light">
-									<th class="tyext-center">Tracking No.</th>
-									<th class="tyext-center">Supplier</th>
-									<th class="tyext-center">Order No.</th>
-									<th class="tyext-center">Carrier Name</th>
-									<th class="tyext-center">Estimated Arrival</th>
-									<th class="tyext-center">Status</th>
-									<th class="tyext-center">Actions</th>
+									<th class="text-center">Tracking No.</th>
+									<th class="text-center">Supplier</th>
+									<th class="text-center">Order No.</th>
+									<th class="text-center">Carrier Name</th>
+									<th class="text-center">Estimated Arrival</th>
+									<th class="text-center">Status</th>
+									<th class="text-center">Actions</th>
 								</tr>
 							</thead>
 

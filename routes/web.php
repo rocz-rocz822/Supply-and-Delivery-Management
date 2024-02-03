@@ -15,9 +15,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 // Route::get('pages/index', [AdminController::class, 'dashboard'])->name('pages.index');
-Route::get('pages/delivered', [App\Http\Controllers\AdminController::class, 'delivered'])->name('pages.delivered');
-Route::get('pages/cancelled', [App\Http\Controllers\AdminController::class, 'cancelled'])->name('pages.cancelled');
-Route::get('pages/defective', [App\Http\Controllers\AdminController::class, 'defective'])->name('pages.defective');
 Route::get('pages/receipt', [App\Http\Controllers\AdminController::class, 'receipt'])->name('pages.receipt');
 Route::get('action/invoice', [App\Http\Controllers\AdminController::class, 'invoice'])->name('action.invoice');
 
@@ -53,9 +50,9 @@ Route::group(['namespace' => "App\Http\Controllers"], function() {
 				Route::delete('destroy/{id}', 'SupplyController@destroy')->name('e-commerce.supply.destroy');
 			});
 
-			////////////////////////
+			/////////////////////
 			// DELIVERY ROUTES //
-			////////////////////////
+			/////////////////////
 			Route::group(['prefix' => 'delivery'], function() {
 				// PENDING //
 				Route::group(['prefix' => 'pending'], function() {
@@ -71,6 +68,23 @@ Route::group(['namespace' => "App\Http\Controllers"], function() {
 
 				// Update
 				Route::patch('update/{id}/status', 'DeliveryController@updateStatus')->name('e-commerce.delivery.update.status');
+			});
+
+			/////////////
+			// RETURNS //
+			/////////////
+			Route::group(['prefix' => 'returns'], function() {
+				// CANCELLED //
+				Route::group(['prefix' => 'cancelled'], function() {
+					// Index
+					Route::get('/', 'DeliveryController@indexCancelled')->name('e-commerce.returns.cancelled');
+				});
+
+				// DEFECTIVE //
+				Route::group(['prefix' => 'defective'], function() {
+					// Index
+					Route::get('/', 'DeliveryController@indexReturned')->name('e-commerce.returns.defective');
+				});
 			});
 		});
 

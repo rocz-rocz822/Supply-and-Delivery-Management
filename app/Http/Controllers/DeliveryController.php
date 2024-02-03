@@ -34,6 +34,26 @@ class DeliveryController extends Controller
 		]);
 	}
 
+	// CANCELLED //
+	protected function indexCancelled() {
+		$cancellations = StockOrder::where('status', '=', 3)
+			->get();
+
+		return view('pages.cancelled', [
+			'cancellations' => $cancellations,
+		]);
+	}
+
+	// RETURNED //
+	protected function indexReturned() {
+		$returnees = StockOrder::where('status', '=', 4)
+			->get();
+
+		return view('pages.defective', [
+			'returnees' => $returnees,
+		]);
+	}
+
 	// GENERAL ACTION //
 	protected function updateStatus(Request $req, $id) {
 		$validator = Validator::make(
@@ -74,7 +94,7 @@ class DeliveryController extends Controller
 		}
 
 		return redirect()
-			->route('e-commerce.delivery.pending')
+			->back()
 			->with('success', "Status updated successfully to " . strtolower($stockOrder->getStatus()) . ".");
 	}
 

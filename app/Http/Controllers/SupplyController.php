@@ -80,7 +80,7 @@ class SupplyController extends Controller
 				'quantity' => $clean['quantity'],
 			]);
 
-			ProductCategory::create([
+			ProductCategory::firstOrCreate([
 				'product_id' => $clean['product'],
 				'category_id' => $clean['category'],
 			]);
