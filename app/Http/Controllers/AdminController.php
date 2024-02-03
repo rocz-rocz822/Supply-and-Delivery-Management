@@ -16,6 +16,11 @@ class AdminController extends Controller
     //     return view('pages.dashboard');
     // }
 
+	public function delivered() {
+        return view('pages.delivered');
+    }
+
+
     public function cancelled() {
         return view('pages.cancelled');
     }
