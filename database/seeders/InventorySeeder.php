@@ -24,12 +24,12 @@ class InventorySeeder extends Seeder
 			// TOYS (12)
 			6 => 0,
 			7 => 0,
-			8 => 0,
+			// 8 => 0,
 			// HOME (4)
-			9 => 0,
-			10 => 0,
-			11 => 0,
-			12 => 0,
+			// 9 => 0,
+			// 10 => 0,
+			// 11 => 0,
+			// 12 => 0,
 		];
 
 		foreach ($inventory as $product_id => $stock) {

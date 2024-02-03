@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::connection('mysql_prd_inv')->create('products', function (Blueprint $table) {
             $table->id();
 			$table->string('name');
-			$table->string('description');
+			$table->mediumText('description');
 			$table->decimal('price', 8, 2);
 			$table->string('image')->nullable();
             $table->timestamps();

@@ -25,22 +25,22 @@ class ProductCategorySeeder extends Seeder
             // NECKLACE (5)
             6 => 2, // Astra Monile
             7 => 2, // Caelum Monile
-            8 => 2, // Luna Monile
-            9 => 2, // Sol Monile
-            10 => 2, // Noctis Monile
+            // 8 => 2, // Luna Monile
+            // 9 => 2, // Sol Monile
+            // 10 => 2, // Noctis Monile
 
             // BRACELET (4)
-            11 => 1, // Astra Armilla
-            12 => 1, // Caelum Armilla
-            13 => 1, // Luna Armilla
-            14 => 1, // Sol Armilla
+            // 11 => 1, // Astra Armilla
+            // 12 => 1, // Caelum Armilla
+            // 13 => 1, // Luna Armilla
+            // 14 => 1, // Sol Armilla
 
             // PACKAGE SET (5)
-            15 => 4, // Earth and Stars Package Set
-            16 => 4, // Sunkissed Sky Package Set
-            17 => 4, // Iridescent Moon Package Set
-            18 => 4, // Incandescent Sun Package Set
-            19 => 4, // Moonlit Night Package Set
+            // 15 => 4, // Earth and Stars Package Set
+            // 16 => 4, // Sunkissed Sky Package Set
+            // 17 => 4, // Iridescent Moon Package Set
+            // 18 => 4, // Incandescent Sun Package Set
+            // 19 => 4, // Moonlit Night Package Set
 
 			// Additional Categories for Other Products (Adjust as needed)
             // Example: Health (3)
