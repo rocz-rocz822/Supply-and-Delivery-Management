@@ -63,6 +63,12 @@ Route::group(['namespace' => "App\Http\Controllers"], function() {
 					Route::get('/', 'DeliveryController@indexPending')->name('e-commerce.delivery.pending');
 				});
 
+				// DELIVERED //
+				Route::group(['prefix' => 'delivered'], function() {
+					// Index
+					Route::get('/', 'DeliveryController@indexDelivered')->name('e-commerce.delivery.delivered');
+				});
+
 				// Update
 				Route::patch('update/{id}/status', 'DeliveryController@updateStatus')->name('e-commerce.delivery.update.status');
 			});

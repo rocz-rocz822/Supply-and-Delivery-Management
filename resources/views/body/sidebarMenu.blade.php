@@ -38,7 +38,7 @@
                     <ul class="nav sub-nav sub-nav">
 						{{-- DELIVERED --}}
                         <li class="{{ Request::is('e-commerce/delivery') ? 'active' : '' }}">
-                            <a href="{{ route('pages.delivered') }}">
+                            <a href="{{ route('e-commerce.delivery.delivered') }}">
                             	<span class="glyphicon glyphicon-ok-circle"></span> Delivered
 							</a>
                         </li>

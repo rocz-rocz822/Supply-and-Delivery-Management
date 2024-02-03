@@ -24,6 +24,16 @@ class DeliveryController extends Controller
 		]);
 	}
 
+	// DELIVERED //
+	protected function indexDelivered() {
+		$delivered = StockOrder::where('status', '=', 2)
+			->get();
+
+		return view('pages.delivered', [
+			'delivered' => $delivered,
+		]);
+	}
+
 	// GENERAL ACTION //
 	protected function updateStatus(Request $req, $id) {
 		$validator = Validator::make(
