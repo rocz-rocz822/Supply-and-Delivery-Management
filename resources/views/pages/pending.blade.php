@@ -40,14 +40,14 @@
 								@forelse ($pendings as $pending)
 								<tr>
 									<td class="text-center">{{ $pending->tracking_number }}</td>
-									<td>{{ $pending->supplier->getName() }}</td>
-									<td>{{ $pending->transaction->transaction_number }}</td>
-									<td>{{ $pending->delivery->courier_name }}</td>
-									<td>{{ $pending->estimated_delivery_at->format('M d, Y') }}</td>
-									<td>{{ $pending->getStatus() }}</td>
+									<td class="text-center">{{ $pending->supplier->getName() }}</td>
+									<td class="text-center">{{ $pending->transaction->transaction_number }}</td>
+									<td class="text-center">{{ $pending->delivery->courier_name }}</td>
+									<td class="text-center">{{ $pending->estimated_delivery_at->format('M d, Y') }}</td>
+									<td class="text-center">{{ $pending->getStatus() }}</td>
 
 									{{-- Action Button Group --}}
-									<td>
+									<td class="text-center">
 										<div class="btn-group">
 											{{-- If the stock is newly created --}}
 											@if ($pending->getStatus() == 'Created')

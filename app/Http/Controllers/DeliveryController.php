@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Models\Delivery;
+use App\Models\Inventory;
 use App\Models\StockOrder;
 
 use DB;
@@ -79,8 +80,23 @@ class DeliveryController extends Controller
 
 			$clean = $validator->validated();
 
+			// Updates the status
 			$stockOrder = StockOrder::find($id);
 			$stockOrder->status = $clean['status'];
+
+			// If the status is delivered, set the delivered_at field to now
+			if ($stockOrder->getStatus(true) === "delivered") {
+				$stockOrder->delivered_at = now()->timezone('Asia/Manila');
+
+				// Update the associated inventory
+				$inventory = Inventory::updateOrCreate([
+					'id' => $stockOrder->product_id
+				], [
+					'stock' => $stockOrder->quantity,
+				]);
+			}
+
+			// Saves the changes
 			$stockOrder->save();
 
 			DB::commit();

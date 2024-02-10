@@ -40,14 +40,14 @@
 								@forelse ($delivered as $d)
 								<tr>
 									<td class="text-center">{{ $d->tracking_number }}</td>
-									<td>{{ $d->supplier->getName() }}</td>
-									<td>{{ $d->transaction->transaction_number }}</td>
-									<td>{{ $d->delivery->courier_name }}</td>
-									<td>{{ $d->estimated_delivery_at->format('M d, Y') }}</td>
-									<td>{{ $d->getStatus() }}</td>
+									<td class="text-center">{{ $d->supplier->getName() }}</td>
+									<td class="text-center">{{ $d->transaction->transaction_number }}</td>
+									<td class="text-center">{{ $d->delivery->courier_name }}</td>
+									<td class="text-center">{{ $d->estimated_delivery_at->format('M d, Y') }}</td>
+									<td class="text-center">{{ $d->getStatus() }}</td>
 
 									{{-- Action Button Group --}}
-									<td>
+									<td class="text-center">
 										<div class="btn-group">
 											<button data-value="4"
 												data-action="{{ route('e-commerce.delivery.update.status', [$d->id]) }}"

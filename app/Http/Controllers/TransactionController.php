@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Transaction;
 use Illuminate\Http\Request;
+
+use App\Models\StockOrder;
+use App\Models\Transaction;
 
 use DB;
 use Exception;
@@ -11,6 +13,14 @@ use Log;
 
 class TransactionController extends Controller
 {
+	protected function index() {
+		$transactions = StockOrder::all();
+
+		return view('pages.receipt', [
+			'transactions' => $transactions,
+		]);
+	}
+
 	/////////////////
 	// API METHODS //
 	/////////////////

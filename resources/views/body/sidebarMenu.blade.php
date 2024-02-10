@@ -37,7 +37,7 @@
 
 					<ul class="nav sub-nav sub-nav">
 						{{-- DELIVERED --}}
-						<li class="{{ Request::is('e-commerce/delivery') ? 'active' : '' }}">
+						<li class="{{ Request::is('e-commerce/delivery/delivered*') ? 'active' : '' }}">
 							<a href="{{ route('e-commerce.delivery.delivered') }}">
 								<span class="glyphicon glyphicon-ok-circle"></span> Delivered
 							</a>
@@ -80,8 +80,8 @@
 		</li>
 
 		{{-- TRANSACTIONS --}}
-		<li>
-			<a href="{{url('pages/receipt')}}">
+		<li class="{{ Request::is('e-commerce/transactions*') }}">
+			<a href="{{ route('e-commerce.transactions.index') }}">
 				<span class="fa fa-file-invoice"></span>
 				<span class="sidebar-title">Transactions</span>
 				{{-- <span class="caret"></span> --}}

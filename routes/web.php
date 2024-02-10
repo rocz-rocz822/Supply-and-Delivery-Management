@@ -15,7 +15,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 // Route::get('pages/index', [AdminController::class, 'dashboard'])->name('pages.index');
-Route::get('pages/receipt', [App\Http\Controllers\AdminController::class, 'receipt'])->name('pages.receipt');
 Route::get('action/invoice', [App\Http\Controllers\AdminController::class, 'invoice'])->name('action.invoice');
 
 Route::group(['namespace' => "App\Http\Controllers"], function() {
@@ -85,6 +84,14 @@ Route::group(['namespace' => "App\Http\Controllers"], function() {
 					// Index
 					Route::get('/', 'DeliveryController@indexReturned')->name('e-commerce.returns.defective');
 				});
+			});
+
+			//////////////////
+			// TRANSACTIONS //
+			//////////////////
+			Route::group(['prefix' => 'transactions'], function() {
+				// Index
+				Route::get('/', 'TransactionController@index')->name('e-commerce.transactions.index');
 			});
 		});
 

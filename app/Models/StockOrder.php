@@ -91,9 +91,11 @@ class StockOrder extends Model
 	/**
 	 * Gets the status of the delivery
 	 */
-	public function getStatus(): string
+	public function getStatus($isSmall = false): string
 	{
-		return self::getStatuses()[$this->status];
+		$status = self::getStatuses()[$this->status];
+
+		return $isSmall ? strtolower($status) : $status;
 	}
 
 	/**
