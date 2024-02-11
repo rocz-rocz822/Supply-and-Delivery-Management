@@ -11,6 +11,7 @@ use App\Models\StockOrder;
 use DB;
 use Exception;
 use Log;
+use stdClass;
 use Validator;
 
 class DeliveryController extends Controller
@@ -84,16 +85,43 @@ class DeliveryController extends Controller
 			$stockOrder = StockOrder::find($id);
 			$stockOrder->status = $clean['status'];
 
-			// If the status is delivered, set the delivered_at field to now
-			if ($stockOrder->getStatus(true) === "delivered") {
-				$stockOrder->delivered_at = now()->timezone('Asia/Manila');
+			// Set the action to be performed
+			$status = $stockOrder->getStatus(true);
+			$shouldUpdateInventory = false;
+			switch ($status) {
+				// If the status is delivered, set the delivered_at field to now as well
+				case "delivered":
+					$stockOrder->delivered_at = now()->timezone('Asia/Manila');
+					$action = '+';
+					$shouldUpdateInventory = true;
+					break;
 
-				// Update the associated inventory
-				$inventory = Inventory::updateOrCreate([
-					'id' => $stockOrder->product_id
-				], [
-					'stock' => $stockOrder->quantity,
+				case "defective-returned":
+					$action = '-';
+					$shouldUpdateInventory = true;
+					break;
+			}
+
+			// Update the associated inventory
+			if ($shouldUpdateInventory) {
+				$inventoryUpdate = Request::create('/api/inventory/update', 'POST', [
+					'product_id' => $stockOrder->product_id,
+					'quantity' => $stockOrder->quantity,
+					'action' => $action,
 				]);
+
+				$responseJSON = json_decode(
+					app()->handle($inventoryUpdate)->getContent(),
+					true
+				);
+				$response = new stdClass();
+				foreach ($responseJSON as $key => $value) {
+					$response->{$key} = $value;
+				}
+
+				if (!$response->success) {
+					throw new Exception($response->message);
+				}
 			}
 
 			// Saves the changes

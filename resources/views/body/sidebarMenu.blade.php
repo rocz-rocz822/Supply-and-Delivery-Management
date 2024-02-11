@@ -12,7 +12,7 @@
 
 		{{-- E-COMMERCE --}}
 		<li class="{{ Request::is('e-commerce*') ? 'active' : '' }}">
-			<a class="accordion-toggle menu-open">
+			<a class="accordion-toggle {{ Request::is('e-commerce*') ? 'menu-open' : '' }}">
 				<span class="glyphicon glyphicon-shopping-cart"></span>
 				<span class="sidebar-title">E-commerce</span>
 				<span class="caret"></span>
@@ -80,9 +80,9 @@
 		</li>
 
 		{{-- TRANSACTIONS --}}
-		<li class="{{ Request::is('e-commerce/transactions*') }}">
-			<a href="{{ route('e-commerce.transactions.index') }}">
-				<span class="fa fa-file-invoice"></span>
+		<li class="{{ Request::is('transactions*') ? 'active' : '' }}">
+			<a href="{{ route('transactions.index') }}">
+				<span class="glyphicon glyphicon-list-alt"></span>
 				<span class="sidebar-title">Transactions</span>
 				{{-- <span class="caret"></span> --}}
 			</a>

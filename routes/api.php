@@ -30,7 +30,7 @@ Route::group(['namespace' => "App\Http\Controllers"], function() {
 			/////////////////////
 			Route::group(['prefix' => 'delivery'], function() {
 				// Store
-				Route::post('/store', 'DeliveryController@store')->name('e-commerce.delivery.store');
+				Route::post('/store', 'DeliveryController@store')->name('api.e-commerce.delivery.store');
 			});
 
 			////////////////////////
@@ -38,7 +38,7 @@ Route::group(['namespace' => "App\Http\Controllers"], function() {
 			////////////////////////
 			Route::group(['prefix' => 'stock-order'], function() {
 				// Store
-				Route::post('store', 'StockOrderController@store')->name('e-commerce.stock_order.store');
+				Route::post('store', 'StockOrderController@store')->name('api.e-commerce.stock_order.store');
 			});
 
 			////////////////////////
@@ -46,8 +46,16 @@ Route::group(['namespace' => "App\Http\Controllers"], function() {
 			////////////////////////
 			Route::group(['prefix' => 'transaction'], function() {
 				// Store
-				Route::post('store', 'TransactionController@store')->name('e-commerce.transaction.store');
+				Route::post('store', 'TransactionController@store')->name('api.e-commerce.transaction.store');
 			});
+		});
+
+		//////////////////////////////
+		// INVENTORY RELATED ROUTES //
+		//////////////////////////////
+		Route::group(['prefix' => 'inventory'], function() {
+			// Update
+			Route::post('update', 'InventoryController@update')->name('api.inventory.update');
 		});
 	});
 });

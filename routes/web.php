@@ -85,14 +85,14 @@ Route::group(['namespace' => "App\Http\Controllers"], function() {
 					Route::get('/', 'DeliveryController@indexReturned')->name('e-commerce.returns.defective');
 				});
 			});
+		});
 
-			//////////////////
-			// TRANSACTIONS //
-			//////////////////
-			Route::group(['prefix' => 'transactions'], function() {
-				// Index
-				Route::get('/', 'TransactionController@index')->name('e-commerce.transactions.index');
-			});
+		//////////////////
+		// TRANSACTIONS //
+		//////////////////
+		Route::group(['prefix' => 'transactions'], function() {
+			// Index
+			Route::get('/', 'TransactionController@index')->name('transactions.index');
 		});
 
 		////////////////////

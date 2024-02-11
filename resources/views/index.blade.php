@@ -181,12 +181,6 @@
 
 		"use strict";
 
-		// Init Theme Core
-		Core.init();
-
-		// Init Demo JS
-		Demo.init();
-
 		// Init DataTables
 		if (!(disableDataTable ?? false))
 			$('#datatable').dataTable();
